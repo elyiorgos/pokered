@@ -6,11 +6,11 @@ UnusedBadgeNames::
 	db "ひんやりバッヂ@" ; CHILL BADGE
 	db "なかよしバッヂ@" ; FRIENDSHIP BADGE
 	db "バラバッヂ@" ; ROSE BADGE
-	db "ひのたまバッヂ@" ; FIREBALL BADGE
+	db "unused@" ; FIREBALL BADGE
 	db "ゴールドバッヂ@" ; GOLD BADGE
 
 UnusedRankingNames:
-	db "たまご@" ; EGG
+	db "unused@" ; EGG
 	db "ひよこ@" ; CHICK
 	db "ブロンズ@" ; BRONZE
 	db "シルバー@" ; SILVER

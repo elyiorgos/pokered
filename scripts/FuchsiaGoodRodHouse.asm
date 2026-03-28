@@ -46,12 +46,12 @@ FuchsiaGoodRodHouseFishingGuruText:
 
 .UnusedText:
 	para "つり　こそ"
-	line "おとこの　ロマン　だ！"
+	line "なな！"
 
-	para "へぼいつりざおは"
-	line "コイキングしか　つれ　なんだが"
-	line "この　いいつりざおなら"
-	line "もっと　いいもんが　つれるんじゃ！"
+	para "なな"
+	line "なな"
+	line "なな"
+	line "なな"
 	done
 
 .ThatsSoDisappointingText:
