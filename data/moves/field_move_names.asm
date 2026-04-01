@@ -1,11 +1,11 @@
 ; see also FieldMoveDisplayData
 FieldMoveNames:
-	db "CUT@"
-	db "FLY@"
+	db "SECI@"
+	db "LET@"
 	db "@"
 	db "SURF@"
-	db "STRENGTH@"
-	db "FLASH@"
-	db "DIG@"
+	db "SNAGA@"
+	db "BLESAK@"
+	db "KOPAJ@"
 	db "TELEPORT@"
-	db "SOFTBOILED@"
+	db "MEKO KUVANO@"
