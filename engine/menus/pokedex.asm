@@ -360,19 +360,19 @@ DrawPokedexVerticalLine:
 	ret
 
 PokedexSeenText:
-	db "SEEN@"
+	db "VIÐ.@"
 
 PokedexOwnText:
-	db "OWN@"
+	db "UHV.@"
 
 PokedexContentsText:
-	db "CONTENTS@"
+	db "SADRŽAJ@"
 
 PokedexMenuItemsText:
-	db   "DATA"
-	next "CRY"
-	next "AREA"
-	next "QUIT@"
+	db   "POD."
+	next "GLA."
+	next "OBL."
+	next "IZA.@"
 
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:
@@ -590,8 +590,8 @@ ShowPokedexDataInternal:
 	ret
 
 HeightWeightText:
-	db   "HT  ?′??″"
-	next "WT   ???lb@"
+	db   "VIS ?′??″"
+	next "TEŽ  ???lb@"
 
 ; leftover from JPN Pokedex, where species have the suffix "Pokemon"
 PokeText: ; unreferenced

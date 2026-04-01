@@ -2049,7 +2049,7 @@ DisplayBattleMenu::
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperLeftMenuItemWasNotSelected
 .oldManName
-	db "OLD MAN@"
+	db "STARAC@"
 .handleBattleMenuInput
 	ld a, [wBattleAndStartSavedMenuItem]
 	ld [wCurrentMenuItem], a
@@ -2066,9 +2066,9 @@ DisplayBattleMenu::
 	ld a, ' '
 	jr z, .safariLeftColumn
 ; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
-	ldcoord_a 15, 14 ; clear upper cursor position in right column
-	ldcoord_a 15, 16 ; clear lower cursor position in right column
-	ld b, $9 ; top menu item X
+	ldcoord_a 14, 14 ; clear upper cursor position in right column
+	ldcoord_a 14, 16 ; clear lower cursor position in right column
+	ld b, $7 ; top menu item X
 	jr .leftColumn_WaitForInput
 .safariLeftColumn
 	ldcoord_a 13, 14
@@ -2099,9 +2099,9 @@ DisplayBattleMenu::
 	ld a, ' '
 	jr z, .safariRightColumn
 ; put cursor in right column for normal battle menu (i.e. when it's not a Safari battle)
-	ldcoord_a 9, 14 ; clear upper cursor position in left column
-	ldcoord_a 9, 16 ; clear lower cursor position in left column
-	ld b, $f ; top menu item X
+	ldcoord_a 7, 14 ; clear upper cursor position in left column
+	ldcoord_a 7, 16 ; clear lower cursor position in left column
+	ld b, $e ; top menu item X
 	jr .rightColumn_WaitForInput
 .safariRightColumn
 	ldcoord_a 1, 14 ; clear upper cursor position in left column
@@ -2907,10 +2907,10 @@ PrintMenuItem:
 	jp Delay3
 
 DisabledText:
-	db "disabled!@"
+	db "onemogućen@"
 
 TypeText:
-	db "TYPE@"
+	db "TIP@"
 
 SelectEnemyMove:
 	ld a, [wLinkState]
@@ -6711,7 +6711,7 @@ InitWildBattle:
 	ld [hli], a   ; write front sprite pointer
 	ld [hl], b
 	ld hl, wEnemyMonNick  ; set name to "GHOST"
-	ld_hli_a_string "GHOST@"
+	ld_hli_a_string "DUH@"
 	ld a, [wCurPartySpecies]
 	push af
 	ld a, MON_GHOST
