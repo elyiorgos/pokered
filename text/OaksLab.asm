@@ -1,364 +1,365 @@
 _OaksLabRivalGrampsIsntAroundText::
-	text "<RIVAL>: Yo"
-	line "<PLAYER>! Gramps"
-	cont "isn't around!"
+	text "<RIVAL>: Ej" ; "<RIVAL>: Yo"
+	line "<PLAYER>! Deda" ; "<PLAYER>! Gramps"
+	cont "nije ovde!" ; "isn't around!"
 	done
 
 _OaksLabRivalGoAheadAndChooseText::
-	text "<RIVAL>: Heh, I"
-	line "don't need to be"
-	cont "greedy like you!"
+	text "<RIVAL>: Ha, ja" ; "<RIVAL>: Heh, I"
+	line "ne moram biti" ; "don't need to be"
+	cont "alav kao ti!" ; "greedy like you!"
 
-	para "Go ahead and"
-	line "choose, <PLAYER>!"
+	para "Hajde sad" ; "Go ahead and"
+	line "biraj, <PLAYER>!" ; "choose, <PLAYER>!"
 	done
 
 _OaksLabRivalMyPokemonLooksStrongerText::
-	text "<RIVAL>: My"
-	line "#MON looks a"
-	cont "lot stronger."
+	text "<RIVAL>: Moj" ; "<RIVAL>: My"
+	line "#MON izgleda" ; "#MON looks a"
+	cont "mnogo jači." ; "lot stronger."
 	done
 
 _OaksLabThoseArePokeBallsText::
-	text "Those are #"
-	line "BALLs. They"
-	cont "contain #MON!"
+	text "To su #" ; "Those are #"
+	line "LOPTE." ; "BALLs. They"
+	cont "sadrže #MON!" ; "contain #MON!"
 	done
 
 _OaksLabYouWantCharmanderText::
-	text "So! You want the"
-	line "fire #MON,"
-	cont "CHARMANDER?"
+	text "Dakle! Hoćeš" ; "So! You want the"
+	line "vatrenog #MON," ; "fire #MON,"
+	cont "ŽARDEVNJAK?" ; "CHARMANDER?"
 	done
 
 _OaksLabYouWantSquirtleText::
-	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	text "Dakle! Hoćeš" ; "So! You want the"
+	line "vodenog #MON," ; "water #MON,"
+	cont "ŠKVIRTLA?" ; "SQUIRTLE?"
 	done
 
 _OaksLabYouWantBulbasaurText::
-	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	text "Dakle! Hoćeš" ; "So! You want the"
+	line "biljnog #MON," ; "plant #MON,"
+	cont "LUKOSAUR?" ; "BULBASAUR?"
 	done
 
 _OaksLabMonEnergeticText::
-	text "This #MON is"
-	line "really energetic!"
+	text "Ovaj #MON je" ; "This #MON is"
+	line "baš živahan!" ; "really energetic!"
 	prompt
 
 _OaksLabReceivedMonText::
-	text "<PLAYER> received"
-	line "a @"
+	text "<PLAYER> je dobio" ; "<PLAYER> received"
+	line "jednog @" ; "a @"
 	text_ram wNameBuffer
-	text "!@"
+	text "!@" ; "!@"
 	text_end
 
 _OaksLabLastMonText::
-	text "That's PROF.OAK's"
-	line "last #MON!"
+	text "To je PROF.HRAST" ; "That's PROF.OAK's"
+	line "zadnji #MON!" ; "last #MON!"
 	done
 
 _OaksLabOak1WhichPokemonDoYouWantText::
-	text "OAK: Now, <PLAYER>,"
-	line "which #MON do"
-	cont "you want?"
+	text "HRAST: <PLAYER>," ; "OAK: Now, <PLAYER>,"
+	line "kog #MON želiš" ; "which #MON do"
+	cont "da uzmeš?" ; "you want?"
 	done
 
 _OaksLabOak1YourPokemonCanFightText::
-	text "OAK: If a wild"
-	line "#MON appears,"
-	cont "your #MON can"
-	cont "fight against it!"
+	text "HRAST: Ako divlji" ; "OAK: If a wild"
+	line "#MON naiđe," ; "#MON appears,"
+	cont "tvoj #MON može" ; "your #MON can"
+	cont "da se bori!" ; "fight against it!"
 	done
 
 _OaksLabOak1RaiseYourYoungPokemonText::
-	text "OAK: <PLAYER>,"
-	line "raise your young"
-	cont "#MON by making"
-	cont "it fight!"
+	text "HRAST: <PLAYER>," ; "OAK: <PLAYER>,"
+	line "gaji svog mladog" ; "raise your young"
+	cont "#MON u borbi" ; "#MON by making"
+	cont "da ojača!" ; "it fight!"
 	done
 
 _OaksLabOak1DeliverParcelText::
-	text "OAK: Oh, <PLAYER>!"
+	text "HRAST: O, <PLAYER>!" ; "OAK: Oh, <PLAYER>!"
 
-	para "How is my old"
-	line "#MON?"
+	para "Kako je moj stari" ; "How is my old"
+	line "#MON?" ; "#MON?"
 
-	para "Well, it seems to"
-	line "like you a lot."
+	para "Pa, čini se da" ; "Well, it seems to"
+	line "te baš voli." ; "like you a lot."
 
-	para "You must be"
-	line "talented as a"
-	cont "#MON trainer!"
+	para "Mora da si" ; "You must be"
+	line "darovit kao" ; "talented as a"
+	cont "#MON trener!" ; "#MON trainer!"
 
-	para "What? You have"
-	line "something for me?"
+	para "Šta? Imaš" ; "What? You have"
+	line "nešto za mene?" ; "something for me?"
 
-	para "<PLAYER> delivered"
-	line "OAK's PARCEL.@"
+	para "<PLAYER> preda" ; "<PLAYER> delivered"
+	line "PAKET.@" ; "OAK's PARCEL.@"
 	text_end
 
 _OaksLabOak1ParcelThanksText::
 	text_start
-	para "Ah! This is the"
-	line "custom # BALL"
-	cont "I ordered!"
-	cont "Thank you!"
+	para "To je posebna" ; "Ah! This is the"
+	line "# LOPTA" ; "custom # BALL"
+	cont "što sam poručio!" ; "I ordered!"
+	cont "Hvala ti!" ; "Thank you!"
 	done
 
 _OaksLabOak1PokemonAroundTheWorldText::
-	text "#MON around the"
-	line "world wait for"
-	cont "you, <PLAYER>!"
+	text "#MON širom" ; "#MON around the"
+	line "sveta čekaju" ; "world wait for"
+	cont "te, <PLAYER>!" ; "you, <PLAYER>!"
 	done
 
 _OaksLabOak1ReceivedPokeballsText::
-	text "OAK: You can't get"
-	line "detailed data on"
-	cont "#MON by just"
-	cont "seeing them."
+	text "HRAST: Ne možeš" ; "OAK: You can't get"
+	line "sve znati o" ; "detailed data on"
+	cont "#MON samo" ; "#MON by just"
+	cont "gledajući." ; "seeing them."
 
-	para "You must catch"
-	line "them! Use these"
-	cont "to capture wild"
-	cont "#MON."
+	para "Moraš da ih" ; "You must catch"
+	line "uhvatiš! Uzmi" ; "them! Use these"
+	cont "ovo za hvatanje" ; "to capture wild"
+	cont "#MON." ; "#MON."
 
-	para "<PLAYER> got 5"
-	line "# BALLs!@"
+	para "<PLAYER> dobi 5" ; "<PLAYER> got 5"
+	line "# LOPTE!@" ; "# BALLs!@"
 	text_end
 
 _OaksLabGivePokeballsExplanationText::
 	text_start
-	para "When a wild"
-	line "#MON appears,"
-	cont "it's fair game."
+	para "Kad divlji" ; "When a wild"
+	line "#MON naiđe," ; "#MON appears,"
+	cont "na potezu je!" ; "it's fair game."
 
-	para "Just throw a #"
-	line "BALL at it and try"
-	line "to catch it!"
+	para "Samo baci #" ; "Just throw a #"
+	line "LOPTU i probaj" ; "BALL at it and try"
+	line "da ga uhvatiš!" ; "to catch it!"
 
-	para "This won't always"
-	line "work, though."
+	para "To ne uspe uvek," ; "This won't always"
+	line "naravno." ; "work, though."
 
-	para "A healthy #MON"
-	line "could escape. You"
-	cont "have to be lucky!"
+	para "Zdrav #MON" ; "A healthy #MON"
+	line "može pobeći." ; "could escape. You"
+	cont "Treba sreće!" ; "have to be lucky!"
 	done
 
 _OaksLabOak1ComeSeeMeSometimesText::
-	text "OAK: Come see me"
-	line "sometimes."
+	text "HRAST: Navrati" ; "OAK: Come see me"
+	line "ponekad." ; "sometimes."
 
-	para "I want to know how"
-	line "your #DEX is"
-	cont "coming along."
+	para "Želim da znam" ; "I want to know how"
+	line "kako ti #DEX" ; "your #DEX is"
+	cont "napreduje." ; "coming along."
 	done
 
 _OaksLabOak1HowIsYourPokedexComingText::
-	text "OAK: Good to see "
-	line "you! How is your "
-	cont "#DEX coming? "
-	cont "Here, let me take"
-	cont "a look!"
+	text "HRAST: Drago mi" ; "OAK: Good to see "
+	line "je! Kako ti" ; "you! How is your "
+	cont "#DEX ide?" ; "#DEX coming? "
+	cont "Daj da bacim" ; "Here, let me take"
+	cont "pogled!" ; "a look!"
 	prompt
 
 _OaksLabPokedexText::
-	text "It's encyclopedia-"
-	line "like, but the"
-	cont "pages are blank!"
+	text "Kao enciklopedija" ; "It's encyclopedia-"
+	line "ali su stranice" ; "like, but the"
+	cont "prazne!" ; "pages are blank!"
 	done
 
 _OaksLabOak2Text::
-	text "?"
+	text "?" ; "?"
 	done
 
 _OaksLabGirlText::
-	text "PROF.OAK is the"
-	line "authority on"
-	cont "#MON!"
+	text "PROF.HRAST je" ; "PROF.OAK is the"
+	line "stručnjak za" ; "authority on"
+	cont "#MON!" ; "#MON!"
 
-	para "Many #MON"
-	line "trainers hold him"
-	cont "in high regard!"
+	para "Mnogi #MON" ; "Many #MON"
+	line "treneri ga baš" ; "trainers hold him"
+	cont "poštuju!" ; "in high regard!"
 	done
 
 _OaksLabRivalFedUpWithWaitingText::
-	text "<RIVAL>: Gramps!"
-	line "I'm fed up with"
-	cont "waiting!"
+	text "<RIVAL>: Deda!" ; "<RIVAL>: Gramps!"
+	line "Dosadilo mi je" ; "I'm fed up with"
+	cont "čekanje!" ; "waiting!"
 	done
 
 _OaksLabOakChooseMonText::
-	text "OAK: <RIVAL>?"
-	line "Let me think..."
+	text "HRAST: <RIVAL>?" ; "OAK: <RIVAL>?"
+	line "Da razmislim..." ; "Let me think..."
 
-	para "Oh, that's right,"
-	line "I told you to"
-	cont "come! Just wait!"
+	para "A, da, tačno!" ; "Oh, that's right,"
+	line "Rekoh ti da" ; "I told you to"
+	cont "dođeš! Čekaj!" ; "come! Just wait!"
 
-	para "Here, <PLAYER>!"
+	para "Evo, <PLAYER>!" ; "Here, <PLAYER>!"
 
-	para "There are 3"
-	line "#MON here!"
+	para "Ovde su 3" ; "There are 3"
+	line "#MON ovde!" ; "#MON here!"
 
-	para "Haha!"
+	para "Haha!" ; "Haha!"
 
-	para "They are inside"
-	line "the # BALLs."
+	para "Oni su u" ; "They are inside"
+	line "# LOPTIMA." ; "the # BALLs."
 
-	para "When I was young,"
-	line "I was a serious"
-	cont "#MON trainer!"
+	para "Kad sam bio mlad" ; "When I was young,"
+	line "bio sam pravi" ; "I was a serious"
+	cont "#MON trener!" ; "#MON trainer!"
 
-	para "In my old age, I"
-	line "have only 3 left,"
-	cont "but you can have"
-	cont "one! Choose!"
+	para "Sad kad sam star," ; "In my old age, I"
+	line "imam samo 3," ; "have only 3 left,"
+	cont "ali ti možeš" ; "but you can have"
+	cont "jednog! Biraj!" ; "one! Choose!"
 	done
 
 _OaksLabRivalWhatAboutMeText::
-	text "<RIVAL>: Hey!"
-	line "Gramps! What"
-	cont "about me?"
+	text "<RIVAL>: Hej!" ; "<RIVAL>: Hey!"
+	line "Deda! A šta" ; "Gramps! What"
+	cont "sa mnom?" ; "about me?"
 	done
 
 _OaksLabOakBePatientText::
-	text "OAK: Be patient!"
-	line "<RIVAL>, you can"
-	cont "have one too!"
+	text "HRAST: Mirno!" ; "OAK: Be patient!"
+	line "<RIVAL>, i ti" ; "<RIVAL>, you can"
+	cont "dobijaš jednog!" ; "have one too!"
 	done
 
 _OaksLabOakDontGoAwayYetText::
-	text "OAK: Hey! Don't go"
-	line "away yet!"
+	text "HRAST: Hej! Ne" ; "OAK: Hey! Don't go"
+	line "idi još!" ; "away yet!"
 	done
 
 _OaksLabRivalIllTakeThisOneText::
-	text "<RIVAL>: I'll take"
-	line "this one, then!"
+	text "<RIVAL>: Onda ću" ; "<RIVAL>: I'll take"
+	line "uzeti ovog!" ; "this one, then!"
 	done
 
 _OaksLabRivalReceivedMonText::
-	text "<RIVAL> received"
-	line "a @"
+	text "<RIVAL> dobija" ; "<RIVAL> received"
+	line "jednog @" ; "a @"
 	text_ram wNameBuffer
 	text "!@"
 	text_end
 
 _OaksLabRivalIllTakeYouOnText::
-	text "<RIVAL>: Wait"
-	line "<PLAYER>!"
-	cont "Let's check out"
-	cont "our #MON!"
+	text "<RIVAL>: Čekaj" ; "<RIVAL>: Wait"
+	line "<PLAYER>!" ; "<PLAYER>!"
+	cont "Da proverimo" ; "Let's check out"
+	cont "naše #MON!" ; "our #MON!"
 
-	para "Come on, I'll take"
-	line "you on!"
+	para "Hajde, boriću" ; "Come on, I'll take"
+	line "se s tobom!" ; "you on!"
 	done
 
 _OaksLabRivalIPickedTheWrongPokemonText::
-	text "WHAT?"
-	line "Unbelievable!"
-	cont "I picked the"
-	cont "wrong #MON!"
+	text "ŠTA?" ; "WHAT?"
+	line "Neverovatno!" ; "Unbelievable!"
+	cont "Uzeo sam" ; "I picked the"
+	cont "loš #MON!" ; "wrong #MON!"
 	prompt
 
 _OaksLabRivalAmIGreatOrWhatText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: Da! Zar" ; "<RIVAL>: Yeah! Am"
+	line "nisam sjajan?" ; "I great or what?"
 	prompt
 
 _OaksLabRivalSmellYouLaterText::
-	text "<RIVAL>: Okay!"
-	line "I'll make my"
-	cont "#MON fight to"
-	cont "toughen it up!"
+	text "<RIVAL>: Važi!" ; "<RIVAL>: Okay!"
+	line "Teraću svog" ; "I'll make my"
+	cont "#MON da se" ; "#MON fight to"
+	cont "ojača!" ; "toughen it up!"
 
-	para "<PLAYER>! Gramps!"
-	line "Smell you later!"
+	para "<PLAYER>! Deda!" ; "<PLAYER>! Gramps!"
+	line "Vidimo se!" ; "Smell you later!"
 	done
 
 _OaksLabRivalGrampsText::
-	text "<RIVAL>: Gramps!"
+	text "<RIVAL>: Deda!" ; "<RIVAL>: Gramps!"
 	done
 
 _OaksLabRivalWhatDidYouCallMeForText::
-	text "<RIVAL>: What did"
-	line "you call me for?"
+	text "<RIVAL>: Zašto si" ; "<RIVAL>: What did"
+	line "me zvao?" ; "you call me for?"
 	done
 
 _OaksLabOakIHaveARequestText::
-	text "OAK: Oh right! I"
-	line "have a request"
-	cont "of you two."
+	text "HRAST: A da!" ; "OAK: Oh right! I"
+	line "Imam molbu" ; "have a request"
+	cont "za vas dvoje." ; "of you two."
 	done
 
 _OaksLabOakMyInventionPokedexText::
-	text "On the desk there"
-	line "is my invention,"
-	cont "#DEX!"
+	text "Na stolu je" ; "On the desk there"
+	line "moj izum," ; "is my invention,"
+	cont "#DEX!" ; "#DEX!"
 
-	para "It automatically"
-	line "records data on"
-	cont "#MON you've"
-	cont "seen or caught!"
+	para "Automatski" ; "It automatically"
+	line "beleži podatke" ; "records data on"
+	cont "o #MON koje" ; "#MON you've"
+	cont "si video/uhv.!" ; "seen or caught!"
 
-	para "It's a hi-tech"
-	line "encyclopedia!"
+	para "To je vrhunska" ; "It's a hi-tech"
+	line "enciklopedija!" ; "encyclopedia!"
 	done
 
 _OaksLabOakGotPokedexText::
-	text "OAK: <PLAYER> and"
-	line "<RIVAL>! Take"
-	cont "these with you!"
+	text "HRAST: <PLAYER> i" ; "OAK: <PLAYER> and"
+	line "<RIVAL>! Uzmite" ; "<RIVAL>! Take"
+	cont "ovo sa sobom!" ; "these with you!"
 
-	para "<PLAYER> got"
-	line "#DEX from OAK!@"
+	para "<PLAYER> dobi" ; "<PLAYER> got"
+	line "HRASTOV #DEX!@" ; "#DEX from OAK!@"
 	text_end
 
 _OaksLabOakThatWasMyDreamText::
-	text "To make a complete"
-	line "guide on all the"
-	cont "#MON in the"
-	cont "world..."
+	text "Da napravim" ; "To make a complete"
+	line "potpun vodič o" ; "guide on all the"
+	cont "svim #MON na" ; "#MON in the"
+	cont "svetu..." ; "world..."
 
-	para "That was my dream!"
+	para "To mi je bio san!" ; "That was my dream!"
 
-	para "But, I'm too old!"
-	line "I can't do it!"
+	para "Ali, prestar sam!" ; "But, I'm too old!"
+	line "Ne mogu više!" ; "I can't do it!"
 
-	para "So, I want you two"
-	line "to fulfill my"
-	cont "dream for me!"
+	para "Zato želim vas" ; "So, I want you two"
+	line "da ispunite" ; "to fulfill my"
+	cont "moj san!" ; "dream for me!"
 
-	para "Get moving, you"
-	line "two!"
+	para "Pokrenite se," ; "Get moving, you"
+	line "vas dvoje!" ; "two!"
 
-	para "This is a great"
-	line "undertaking in"
-	cont "#MON history!"
+	para "Ovo je veliki" ; "This is a great"
+	line "poduhvat u" ; "undertaking in"
+	cont "#MON istor.!" ; "#MON history!"
 	done
 
 _OaksLabRivalLeaveItAllToMeText::
-	text "<RIVAL>: Alright"
-	line "Gramps! Leave it"
-	cont "all to me!"
+	text "<RIVAL>: Važi" ; "<RIVAL>: Alright"
+	line "Deda! Ostavi" ; "Gramps! Leave it"
+	cont "meni sve!" ; "all to me!"
 
-	para "<PLAYER>, I hate to"
-	line "say it, but I"
-	cont "don't need you!"
+	para "<PLAYER>, žao mi" ; "<PLAYER>, I hate to"
+	line "je, ali mi ne" ; "say it, but I"
+	cont "trebaš!" ; "don't need you!"
 
-	para "I know! I'll"
-	line "borrow a TOWN MAP"
-	cont "from my sis!"
+	para "Znam! Ja ću" ; "I know! I'll"
+	line "uzeti MAPU GRADA" ; "borrow a TOWN MAP"
+	cont "od sestre!" ; "from my sis!"
 
-	para "I'll tell her not"
-	line "to lend you one,"
-	cont "<PLAYER>! Hahaha!"
+	para "Reći ću joj" ; "I'll tell her not"
+	line "da ti ne da," ; "to lend you one,"
+	cont "<PLAYER>! Haha!" ; "<PLAYER>! Hahaha!"
 	done
 
 _OaksLabScientistText::
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "Proučavam #MON" ; "I study #MON as"
+	line "kao POMOČNIK"  ; "PROF.OAK's AIDE."
+	cont "HRASTA."
 	done
