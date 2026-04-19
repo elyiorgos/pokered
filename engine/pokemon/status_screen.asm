@@ -203,10 +203,10 @@ NamePointers2:
 	dw wDayCareMonName
 
 TypesIDNoOTText:
-	db   "TYPE1/"
-	next "TYPE2/"
+	db   "TIP1/"
+	next "TIP2/"
 	next "<ID>№/"
-	next "OT/"
+	next "TR/"
 	next "@"
 
 StatusText:
@@ -281,10 +281,10 @@ PrintStatsBox:
 	ret
 
 .StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "NAP."
+	next "ODB."
+	next "BRZ."
+	next "SPEC.@"
 
 StatusScreen2:
 	ldh a, [hTileAnimations]
@@ -458,8 +458,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "EXP POINTS"
-	next "LEVEL UP@"
+	db   "ISK. POENA"
+	next "NOVI NIVO@"
 
 StatusScreen_ClearName:
 	ld bc, NAME_LENGTH - 1
