@@ -839,7 +839,7 @@ _WildRanText::
 	prompt
 
 _EnemyRanText::
-	text "Protivnik @" ; "Enemy @"
+	text "@" ; "Enemy @"
 	text_ram wEnemyMonNick
 	text_start
 	line "pobegao!" ; "ran!"
@@ -861,7 +861,7 @@ _HurtByLeechSeedText::
 	prompt
 
 _EnemyMonFaintedText::
-	text "Protivnički @" ; "Enemy @"
+	text "@" ; "Enemy @"
 	text_ram wEnemyMonNick
 	text_start
 	line "je pao!" ; "fainted!"
