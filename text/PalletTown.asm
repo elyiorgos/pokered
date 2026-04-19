@@ -1,56 +1,55 @@
 _PalletTownOakHeyWaitDontGoOutText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@"
+	text "HRAST: Čekaj!" ; "OAK: Hey! Wait!"
+	line "Ne izlazi!@" ; "Don't go out!@"
 	text_end
 
 _PalletTownOakItsUnsafeText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "HRAST: Opasno je!" ; "OAK: It's unsafe!"
+	line "Divlji #MON" ; "Wild #MON live"
+	cont "u visokoj travi!" ; "in tall grass!"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "Treba ti" ; "You need your own"
+	line "#MON za" ; "#MON for your"
+	cont "zaštitu. Znam!" ; "protection."
 
-	para "Here, come with"
-	line "me!"
+	para "Hajde, pođi sa" ; "Here, come with"
+	line "mnom!" ; "me!"
 	done
 
 _PalletTownGirlText::
-	text "I'm raising"
-	line "#MON too!"
+	text "I ja gajim" ; "I'm raising"
+	line "#MON!" ; "#MON too!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Kad ojačaju," ; "When they get"
+	line "mogu da me" ; "strong, they can"
+	cont "zaštite!" ; "protect me!"
 	done
 
 _PalletTownFisherText::
-	text "Technology is"
-	line "incredible!"
+	text "Tehnologija je" ; "Technology is"
+	line "neverovatna!" ; "incredible!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "Sad možeš da" ; "You can now store"
+	line "čuvaš i vraćaš" ; "and recall items"
+	cont "stvari i #MON" ; "and #MON as"
+	cont "kao podatke u PC!" ; "data via PC!"
 	done
 
 _PalletTownOaksLabSignText::
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "HRAST #MON" ; "OAK #MON"
+	line "ISTRAŽ. LAB." ; "RESEARCH LAB"
 	done
 
 _PalletTownSignText::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "PALET GRAD" ; "PALLET TOWN"
+	line "Senke tvog puta" ; "Shades of your"
+	cont "te čekaju!" ; "journey await!"
 	done
 
 _PalletTownPlayersHouseSignText::
-	text "<PLAYER>'s house "
+	text "<PLAYER>-ova kuća " ; "<PLAYER>'s house "
 	done
 
 _PalletTownRivalsHouseSignText::
-	text "<RIVAL>'s house "
+	text "<RIVAL>-ova kuća " ; "<RIVAL>'s house "
 	done
