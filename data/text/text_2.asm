@@ -1,1790 +1,1793 @@
-_AIBattleWithdrawText::
+_AIBattleWithdrawText::  ;
 	text_ram wTrainerName
-	text " with-"
-	line "drew @"
+	text " se po-" ; " with-"
+	line "vukao @" ; "drew @"
 	text_ram wEnemyMonNick
-	text "!"
+	text "!" ; "!"
 	prompt
 
 _AIBattleUseItemText::
 	text_ram wTrainerName
 	text_start
-	line "used @"
+	line "koristio je @" ; "used @"
 	text_ram wNameBuffer
 	text_start
-	cont "on @"
+	cont "na @" ; "on @"
 	text_ram wEnemyMonNick
-	text "!"
+	text "!" ; "!"
 	prompt
 
 _TradeWentToText::
 	text_ram wStringBuffer
-	text " went"
-	line "to @"
+	text " otišao je" ; " went"
+	line "kod @" ; "to @"
 	text_ram wLinkEnemyTrainerName
-	text "."
+	text "." ; "."
 	done
 
 _TradeForText::
-	text "For <PLAYER>'s"
-	line "@"
+	text "Za <PLAYER>-ovog" ; "For <PLAYER>'s"
+	line "@" ; "@"
 	text_ram wStringBuffer
-	text ","
+	text "," ; ","
 	done
 
 _TradeSendsText::
 	text_ram wLinkEnemyTrainerName
-	text " sends"
-	line "@"
+	text " šalje" ; " sends"
+	line "@" ; "@"
 	text_ram wNameBuffer
-	text "."
+	text "." ; "."
 	done
 
 _TradeWavesFarewellText::
 	text_ram wLinkEnemyTrainerName
-	text " waves"
-	line "farewell as"
+	text " maše" ; " waves"
+	line "za oproštaj" ; "farewell as"
 	done
 
 _TradeTransferredText::
 	text_ram wNameBuffer
-	text " is"
-	line "transferred."
+	text " je" ; " is"
+	line "prebačen." ; "transferred."
 	done
 
 _TradeTakeCareText::
-	text "Take good care of"
-	line "@"
+	text "Pazi dobro na" ; "Take good care of"
+	line "@" ; "@"
 	text_ram wNameBuffer
-	text "."
+	text "." ; "."
 	done
 
 _TradeWillTradeText::
 	text_ram wLinkEnemyTrainerName
-	text " will"
-	line "trade @"
+	text " će" ; " will"
+	line "menjati @" ; "trade @"
 	text_ram wNameBuffer
 	text_start
 	done
 
 _TradeforText::
-	text "for <PLAYER>'s"
-	line "@"
+	text "za <PLAYER>-ovog" ; "for <PLAYER>'s"
+	line "@" ; "@"
 	text_ram wStringBuffer
-	text "."
+	text "." ; "."
 	done
 
 _PlaySlotMachineText::
-	text "A slot machine!"
-	line "Want to play?"
+	text "Aparat za slot!" ; "A slot machine!"
+	line "Hoćeš igru?" ; "Want to play?"
 	done
 
 _OutOfCoinsSlotMachineText::
-	text "Darn!"
-	line "Ran out of coins!"
+	text "Šteta!" ; "Darn!"
+	line "Nema žetona!" ; "Ran out of coins!"
 	done
 
 _BetHowManySlotMachineText::
-	text "Bet how many"
-	line "coins?"
+	text "Ulog koliko" ; "Bet how many"
+	line "žetona?" ; "coins?"
 	done
 
 _StartSlotMachineText::
-	text "Start!"
+	text "Kreni!" ; "Start!"
 	done
 
 _NotEnoughCoinsSlotMachineText::
-	text "Not enough"
-	line "coins!"
+	text "Nema dosta" ; "Not enough"
+	line "žetona!" ; "coins!"
 	prompt
 
 _OneMoreGoSlotMachineText::
-	text "One more "
-	line "go?"
+	text "Još jedna" ; "One more "
+	line "partija?" ; "go?"
 	done
 
 _LinedUpText::
-	text " lined up!"
-	line "Scored @"
+	text " u nizu!" ; " lined up!"
+	line "Osvojio je @" ; "Scored @"
 	text_ram wStringBuffer
-	text " coins!"
+	text " žetona!" ; " coins!"
 	done
 
 _NotThisTimeText::
-	text "Not this time!"
+	text "Ne ovaj put!" ; "Not this time!"
 	prompt
 
 _YeahText::
-	text "Yeah!@"
+	text "Da!@" ; "Yeah!@"
 	text_end
 
 _DexSeenOwnedText::
-	text "#DEX   Seen:@"
+	text "#DEX   Viđeno:@" ; "#DEX   Seen:@"
 	text_decimal wDexRatingNumMonsSeen, 1, 3
 	text_start
-	line "         Owned:@"
+	line "         Imaš:@" ; "         Owned:@"
 	text_decimal wDexRatingNumMonsOwned, 1, 3
 	text_end
 
 _DexRatingText::
-	text "#DEX Rating<COLON>"
+	text "#DEX Oc.<COLON>" ; "#DEX Rating<COLON>"
 	done
 
 _GymStatueText1::
 	text_ram wGymCityName
 	text_start
-	line "#MON GYM"
-	cont "LEADER: @"
+	line "#MON TERETANA" ; "#MON GYM"
+	cont "VOÐA: @" ; "LEADER: @"
 	text_ram wGymLeaderName
 	text_start
 
-	para "WINNING TRAINERS:"
-	line "<RIVAL>"
+	para "POBEDNIKI:" ; "WINNING TRAINERS:"
+	line "<RIVAL>" ; "<RIVAL>"
 	done
 
 _GymStatueText2::
 	text_ram wGymCityName
 	text_start
-	line "#MON GYM"
-	cont "LEADER: @"
+	line "#MON TERETANA" ; "#MON GYM"
+	cont "VOÐA: @" ; "LEADER: @"
 	text_ram wGymLeaderName
 	text_start
 
-	para "WINNING TRAINERS:"
-	line "<RIVAL>"
-	cont "<PLAYER>"
+	para "POBEDNIKI:" ; "WINNING TRAINERS:"
+	line "<RIVAL>" ; "<RIVAL>"
+	cont "<PLAYER>" ; "<PLAYER>"
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
-	line "heal your tired,"
-	cont "hurt or fainted"
-	cont "#MON!"
+	text "#MON CENTARi" ; "#MON CENTERs"
+	line "leče umorne," ; "heal your tired,"
+	cont "ranjene ili" ; "hurt or fainted"
+	cont "onesv. #MON!" ; "#MON!"
 	done
 
 _PewterCityPokecenterGuyText::
-	text "Yawn!"
+	text "Zev!" ; "Yawn!"
 
-	para "When JIGGLYPUFF"
-	line "sings, #MON"
-	cont "get drowsy..."
+	para "Kad PUFKO" ; "When JIGGLYPUFF"
+	line "zapeva, #MON" ; "sings, #MON"
+	cont "se uspavaju..." ; "get drowsy..."
 
-	para "...Me too..."
-	line "Snore..."
+	para "...I ja..." ; "...Me too..."
+	line "Hr..." ; "Snore..."
 	done
 
 _CeruleanPokecenterGuyText::
-	text "BILL has lots of"
-	line "#MON!"
+	text "BIL ima mnogo" ; "BILL has lots of"
+	line "#MON!" ; "#MON!"
 
-	para "He collects rare"
-	line "ones too!"
+	para "Skuplja i retke" ; "He collects rare"
+	line "takođe!" ; "ones too!"
 	done
 
 _LavenderPokecenterGuyText::
-	text "CUBONEs wear"
-	line "skulls, right?"
+	text "KOSTIĆ nosi" ; "CUBONEs wear"
+	line "lobanje, zar ne?" ; "skulls, right?"
 
-	para "People will pay a"
-	line "lot for one!"
+	para "Ljudi bi platili" ; "People will pay a"
+	line "mnogo za jednu!" ; "lot for one!"
 	done
 
 _MtMoonPokecenterBenchGuyText::
-	text "If you have too"
-	line "many #MON, you"
-	cont "should store them"
-	cont "via PC!"
+	text "Ako imaš previše" ; "If you have too"
+	line "#MON, trebalo bi" ; "many #MON, you"
+	cont "da ih spremiš" ; "should store them"
+	cont "preko PC!" ; "via PC!"
 	done
 
 _RockTunnelPokecenterGuyText::
-	text "I heard that"
-	line "GHOSTs haunt"
-	cont "LAVENDER TOWN!"
+	text "Čuo sam da" ; "I heard that"
+	line "DUHOVI opsedaju" ; "GHOSTs haunt"
+	cont "LAVANDU GRAD!" ; "LAVENDER TOWN!"
 	done
 
 _UnusedBenchGuyText1::
-	text "I wish I could"
-	line "catch #MON."
+	text "Voleo bih da" ; "I wish I could"
+	line "uhvatim #MON." ; "catch #MON."
 	done
 
 _UnusedBenchGuyText2::
-	text "I'm tired from"
-	line "all the fun..."
+	text "Umoran sam od" ; "I'm tired from"
+	line "sve zabave..." ; "all the fun..."
 	done
 
 _UnusedBenchGuyText3::
-	text "SILPH's manager"
-	line "is hiding in the"
-	cont "SAFARI ZONE."
+	text "SILF menadžer" ; "SILPH's manager"
+	line "se krije u" ; "is hiding in the"
+	cont "SAFARI ZONI." ; "SAFARI ZONE."
 	done
 
 _VermilionPokecenterGuyText::
-	text "It is true that a"
-	line "higher level"
-	cont "#MON will be"
-	cont "more powerful..."
+	text "Tačno je da" ; "It is true that a"
+	line "viši nivo" ; "higher level"
+	cont "#MON će biti" ; "#MON will be"
+	cont "jači..." ; "more powerful..."
 
-	para "But, all #MON"
-	line "will have weak"
-	cont "points against"
-	cont "specific types."
+	para "Ali svi #MON" ; "But, all #MON"
+	line "imaju slabe" ; "will have weak"
+	cont "tačke prema" ; "points against"
+	cont "odr. tipovima." ; "specific types."
 
-	para "So, there is no"
-	line "universally"
-	cont "strong #MON."
+	para "Zato nema" ; "So, there is no"
+	line "uvek jakog" ; "universally"
+	cont "#MON." ; "strong #MON."
 	done
 
 _CeladonCityPokecenterGuyText::
-	text "If I had a BIKE,"
-	line "I would go to"
-	cont "CYCLING ROAD!"
+	text "Da imam BAJK," ; "If I had a BIKE,"
+	line "išao bih na" ; "I would go to"
+	cont "BICIKLISTČKI" ; "CYCLING ROAD!"
+	cont "ROAD!"
 	done
 
 _FuchsiaCityPokecenterGuyText::
-	text "If you're studying "
-	line "#MON, visit"
-	cont "the SAFARI ZONE."
+	text "Ako proučavaš" ; "If you're studying "
+	line "#MON, idi u" ; "#MON, visit"
+	cont "SAFARI ZONU." ; "the SAFARI ZONE."
 
-	para "It has all sorts"
-	line "of rare #MON."
+	para "Ima svakakvih" ; "It has all sorts"
+	line "retkih #MON." ; "of rare #MON."
 	done
 
 _CinnabarPokecenterGuyText::
-	text "#MON can still"
-	line "learn techniques"
-	cont "after canceling"
-	cont "evolution."
+	text "#MON još može" ; "#MON can still"
+	line "da uči tehnike" ; "learn techniques"
+	cont "posle otkazane" ; "after canceling"
+	cont "evolucije." ; "evolution."
 
-	para "Evolution can wait"
-	line "until new moves"
-	cont "have been learned."
+	para "Evolucija može" ; "Evolution can wait"
+	line "čekati dok se" ; "until new moves"
+	cont "ne nauče potezi." ; "have been learned."
 	done
 
 _SaffronCityPokecenterGuyText1::
-	text "It would be great"
-	line "if the ELITE FOUR"
-	cont "came and stomped"
-	cont "TEAM ROCKET!"
+	text "Bilo bi sjajno" ; "It would be great"
+	line "da ELITNA ČETV." ; "if the ELITE FOUR"
+	cont "dođe i zgazi" ; "came and stomped"
+	cont "TIM RAKETA!" ; "TEAM ROCKET!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "TEAM ROCKET took"
-	line "off! We can go"
-	cont "out safely again!"
-	cont "That's great!"
+	text "TIM RAKETA je" ; "TEAM ROCKET took"
+	line "pobegao! Možemo" ; "off! We can go"
+	cont "opet bezbedno!" ; "out safely again!"
+	cont "Baš super!" ; "That's great!"
 	done
 
 _CeladonCityHotelText::
-	text "My sis brought me"
-	line "on this vacation!"
+	text "Sestra me je" ; "My sis brought me"
+	line "dovela na odmor!" ; "on this vacation!"
 	done
 
 _BookcaseText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "Prepuno" ; "Crammed full of"
+	line "#MON knjiga!" ; "#MON books!"
 	done
 
 _NewBicycleText::
-	text "A shiny new"
-	line "BICYCLE!"
+	text "Sjajan novi" ; "A shiny new"
+	line "BICIKL!" ; "BICYCLE!"
 	done
 
 _PushStartText::
-	text "Push START to"
-	line "open the MENU!"
+	text "Pritisni START" ; "Push START to"
+	line "za MENI!" ; "open the MENU!"
 	done
 
 _SaveOptionText::
-	text "The SAVE option is"
-	line "on the MENU"
-	cont "screen."
+	text "SAČUVAJ opcija je" ; "The SAVE option is"
+	line "na MENI" ; "on the MENU"
+	cont "ekranu." ; "screen."
 	done
 
 _StrengthsAndWeaknessesText::
-	text "All #MON types"
-	line "have strong and"
-	cont "weak points"
-	cont "against others."
+	text "Svi #MON tipovi" ; "All #MON types"
+	line "imaju jake i" ; "have strong and"
+	cont "slabe tačke" ; "weak points"
+	cont "jedni na druge." ; "against others."
 	done
 
 _TimesUpText::
-	text "PA: Ding-dong!"
+	text "SPIKER:" ; "PA: Ding-dong!"
+	line "Ding-dong!"
 
-	para "Time's up!"
+	para "Vreme je isteklo!" ; "Time's up!"
 	prompt
 
 _GameOverText::
-	text "PA: Your SAFARI"
-	line "GAME is over!"
+	text "SPIKER: Tvoja " ; "PA: Your SAFARI"
+	line "SAFARI IGRA je" ; "GAME is over!"
+	cont "gotova!"
 	done
 
 _CinnabarGymQuizIntroText::
-	text "#MON Quiz!"
+	text "#MON Kviz!" ; "#MON Quiz!"
 
-	para "Get it right and"
-	line "the door opens to"
-	cont "the next room!"
+	para "Ako pogodiš," ; "Get it right and"
+	line "vrata se otvaraju" ; "the door opens to"
+	cont "u sledeću sobu!" ; "the next room!"
 
-	para "Get it wrong and"
-	line "face a trainer!"
+	para "Ako omaneš," ; "Get it wrong and"
+	line "čeka te trener!" ; "face a trainer!"
 
-	para "If you want to"
-	line "conserve your"
-	cont "#MON for the"
-	cont "GYM LEADER..."
+	para "Ako želiš da" ; "If you want to"
+	line "sačuvaš svog" ; "conserve your"
+	cont "#MON za" ; "#MON for the"
+	cont "VOÐU..." ; "GYM LEADER..."
 
-	para "Then get it right!"
-	line "Here we go!"
+	para "Onda odgovori!" ; "Then get it right!"
+	line "Počnimo!" ; "Here we go!"
 	prompt
 
 _CinnabarQuizQuestionsText1::
-	text "CATERPIE evolves"
-	line "into BUTTERFREE?"
+	text "GUSENICA se" ; "CATERPIE evolves"
+	line "razvija u" ; "into BUTTERFREE?"
+	cont "LEPTOSLOB?"
 	done
 
 _CinnabarQuizQuestionsText2::
-	text "There are 9"
-	line "certified #MON"
-	cont "LEAGUE BADGEs?"
+	text "Postoji 9" ; "There are 9"
+	line "sertif. #MON" ; "certified #MON"
+	cont "BEÐA?" ; "LEAGUE BADGEs?"
 	done
 
 _CinnabarQuizQuestionsText3::
-	text "POLIWAG evolves 3"
-	line "times?"
+	text "PUNOGLAV se" ; "POLIWAG evolves 3"
+	line "razvija 3 puta?" ; "times?"
 	done
 
 _CinnabarQuizQuestionsText4::
-	text "Are thunder moves"
-	line "effective against"
-	cont "ground element-"
-	cont "type #MON?"
+	text "Da li su potezi" ; "Are thunder moves"
+	line "groma dobri na" ; "effective against"
+	cont "ground element-" ; "ground element-"  todo: address
+	cont "type #MON?" ; "type #MON?"  todo: address
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "#MON of the"
-	line "same kind and"
-	cont "level are not"
-	cont "identical?"
+	text "#MON istog" ; "#MON of the"
+	line "tipa i nivoa" ; "same kind and"
+	cont "nisu sasvim" ; "level are not"
+	cont "isti?" ; "identical?"
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "TM28 contains"
-	line "TOMBSTONER?"
+	text "TM28 sadrži" ; "TM28 contains"
+	line "NADGROBNIK?" ; "TOMBSTONER?"
 	done
 
 _CinnabarGymQuizCorrectText::
-	text "You're absolutely"
-	line "correct!"
+	text "Potpuno si" ; "You're absolutely"
+	line "u pravu!" ; "correct!"
 
-	para "Go on through!@"
+	para "Prođi dalje!@" ; "Go on through!@"
 	text_end
 
 _CinnabarGymQuizIncorrectText::
-	text "Sorry! Bad call!"
+	text "Žao mi je! Greška!" ; "Sorry! Bad call!"
 	prompt
 
 _MagazinesText::
-	text "#MON magazines!"
+	text "#MON časopisi!" ; "#MON magazines!"
 
-	para "#MON notebooks!"
+	para "#MON sveske!" ; "#MON notebooks!"
 
-	para "#MON graphs!"
+	para "#MON grafikoni!" ; "#MON graphs!"
 	done
 
 _BillsHouseMonitorText::
-	text "TELEPORTER is"
-	line "displayed on the"
-	cont "PC monitor."
+	text "Separator je" ; "TELEPORTER is"
+	line "prikazan na" ; "displayed on the"
+	cont "PC monitoru." ; "PC monitor."
 	done
 
 _BillsHouseInitiatedText::
-	text "<PLAYER> initiated"
-	line "TELEPORTER's Cell"
-	cont "Separator!@"
+	text "<PLAYER> je pokr." ; "<PLAYER> initiated"
+	line "separator" ; "TELEPORTER's Cell"
+	cont "ćelije!@" ; "Separator!@"
 	text_end
 
 _BillsHousePokemonListText1::
-	text "BILL's favorite"
-	line "#MON list!"
+	text "BIL-ova omilj." ; "BILL's favorite"
+	line "#MON lista!" ; "#MON list!"
 	prompt
 
 _BillsHousePokemonListText2::
-	text "Which #MON do"
-	line "you want to see?"
+	text "Kog #MON" ; "Which #MON do"
+	line "želiš da vidiš?" ; "you want to see?"
 	done
 
 _OakLabEmailText::
-	text "There's an e-mail"
-	line "message here!"
+	text "Ovde je e-mail" ; "There's an e-mail"
+	line "poruka!" ; "message here!"
 
-	para "..."
+	para "..." ; "..."
 
-	para "Calling all"
-	line "#MON trainers!"
+	para "Poziv svim" ; "Calling all"
+	line "#MON trenerima!" ; "#MON trainers!"
 
-	para "The elite trainers"
-	line "of #MON LEAGUE"
-	cont "are ready to take"
-	cont "on all comers!"
+	para "Elitni treneri" ; "The elite trainers"
+	line "#MON LIGE" ; "of #MON LEAGUE"
+	cont "su spremni za" ; "are ready to take"
+	cont "sve izazivače!" ; "on all comers!"
 
-	para "Bring your best"
-	line "#MON and see"
-	cont "how you rate as a"
-	cont "trainer!"
+	para "Donesi najbolje" ; "Bring your best"
+	line "#MON i vidi" ; "#MON and see"
+	cont "kako stojiš kao" ; "how you rate as a"
+	cont "trener!" ; "trainer!"
 
-	para "#MON LEAGUE HQ"
-	line "INDIGO PLATEAU"
+	para "#MON LIGA" ; "#MON LEAGUE HQ"
+	line "INDIGO PLATO" ; "INDIGO PLATEAU"
 
-	para "PS: PROF.OAK,"
-	line "please visit us!"
-	cont "..."
+	para "PS: PROF.HRAST," ; "PS: PROF.OAK,"
+	line "posetite nas!" ; "please visit us!"
+	cont "..." ; "..."
 	done
 
 _GameCornerCoinCaseText::
-	text "A COIN CASE is"
-	line "required!"
+	text "Treba KUT. NOV.!" ; "A COIN CASE is"
+	line "obavezno!" ; "required!"
 	done
 
 _GameCornerNoCoinsText::
-	text "You don't have"
-	line "any coins!"
+	text "Nemaš" ; "You don't have"
+	line "žetone!" ; "any coins!"
 	done
 
 _GameCornerOutOfOrderText::
-	text "OUT OF ORDER"
-	line "This is broken."
+	text "POREMEĆENO" ; "OUT OF ORDER"
+	line "Pokvareno je." ; "This is broken."
 	done
 
 _GameCornerOutToLunchText::
-	text "OUT TO LUNCH"
-	line "This is reserved."
+	text "NA RUČAK" ; "OUT TO LUNCH"
+	line "Rezervisano." ; "This is reserved."
 	done
 
 _GameCornerSomeonesKeysText::
-	text "Someone's keys!"
-	line "They'll be back."
+	text "Nečiji ključevi!" ; "Someone's keys!"
+	line "Vratiće se." ; "They'll be back."
 	done
 
 _JustAMomentText::
-	text "Just a moment."
+	text "Samo trenutak." ; "Just a moment."
 	done
 
 TMNotebookText::
-	text "It's a pamphlet"
-	line "on TMs."
+	text "Ovo je brošura" ; "It's a pamphlet"
+	line "o TMovima." ; "on TMs."
 
-	para "..."
+	para "..." ; "..."
 
-	para "There are 50 TMs"
-	line "in all."
+	para "Ukupno ima 50" ; "There are 50 TMs"
+	line "TMova." ; "in all."
 
-	para "There are also 5"
-	line "HMs that can be"
-	cont "used repeatedly."
+	para "Postoji i 5" ; "There are also 5"
+	line "HMova koji se" ; "HMs that can be"
+	cont "koriste više put." ; "used repeatedly."
 
-	para "SILPH CO.@"
+	para "KOMPANIJA SILF@"; "SILPH CO.@"
 	text_end
 
 _TurnPageText::
-	text "Turn the page?"
+	text "Okreni stranu?" ; "Turn the page?"
 	done
 
 _ViridianSchoolNotebookText5::
-	text "GIRL: Hey! Don't"
-	line "look at my notes!@"
+	text "DEVOJKA: Hej! Ne" ; "GIRL: Hey! Don't"
+	line "gledaj beleške!@" ; "look at my notes!@"
 	text_end
 
 _ViridianSchoolNotebookText1::
-	text "Looked at the"
-	line "notebook!"
+	text "Pogledao si" ; "Looked at the"
+	line "svesku!" ; "notebook!"
 
-	para "First page..."
+	para "Prva strana..." ; "First page..."
 
-	para "# BALLs are"
-	line "used to catch"
-	cont "#MON."
+	para "# LOPTE služe" ; "# BALLs are"
+	line "za hvatanje" ; "used to catch"
+	cont "#MON." ; "#MON."
 
-	para "Up to 6 #MON"
-	line "can be carried."
+	para "Do 6 #MON" ; "Up to 6 #MON"
+	line "možeš nositi." ; "can be carried."
 
-	para "People who raise"
-	line "and make #MON"
-	cont "fight are called"
-	cont "#MON trainers."
+	para "Ljudi koji gaje" ; "People who raise"
+	line "i teraju #MON" ; "and make #MON"
+	cont "na borbu zovu se" ; "fight are called"
+	cont "#MON treneri." ; "#MON trainers."
 	prompt
 
 _ViridianSchoolNotebookText2::
-	text "Second page..."
+	text "Druga strana..." ; "Second page..."
 
-	para "A healthy #MON"
-	line "may be hard to"
-	cont "catch, so weaken"
-	cont "it first!"
+	para "Zdrav #MON" ; "A healthy #MON"
+	line "se teže hvata," ; "may be hard to"
+	cont "zato ga oslabi" ; "catch, so weaken"
+	cont "prvo!" ; "it first!"
 
-	para "Poison, burns and"
-	line "other damage are"
-	cont "effective!"
+	para "Otrov, opek. i" ; "Poison, burns and"
+	line "druga šteta su" ; "other damage are"
+	cont "delotvorni!" ; "effective!"
 	prompt
 
 _ViridianSchoolNotebookText3::
-	text "Third page..."
+	text "Treća strana..." ; "Third page..."
 
-	para "#MON trainers"
-	line "seek others to"
-	cont "engage in #MON"
-	cont "fights."
+	para "#MON treneri" ; "#MON trainers"
+	line "traže druge za" ; "seek others to"
+	cont "#MON borbe." ; "engage in #MON"
+	cont " " ; "fights."
 
-	para "Battles are"
-	line "constantly fought"
-	cont "at #MON GYMs."
+	para "Borbe se stalno" ; "Battles are"
+	line "vode u #MON" ; "constantly fought"
+	cont "TERETANI." ; "at #MON GYMs."
 	prompt
 
 _ViridianSchoolNotebookText4::
-	text "Fourth page..."
+	text "Četvrta strana..." ; "Fourth page..."
 
-	para "The goal for"
-	line "#MON trainers"
-	cont "is to beat the "
-	cont "top 8 #MON"
-	cont "GYM LEADERs."
+	para "Cilj #MON" ; "The goal for"
+	line "trenera je da" ; "#MON trainers"
+	cont "pobede top 8" ; "is to beat the "
+	cont "#MON" ; "top 8 #MON"
+	cont "VOÐE TERETANE." ; "GYM LEADERs."
 
-	para "Do so to earn the"
-	line "right to face..."
+	para "Uradi to pa" ; "Do so to earn the"
+	line "stekni pravo..." ; "right to face..."
 
-	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	para "Na ELITNU ČETV." ; "The ELITE FOUR of"
+	line "#MON LIGE!" ; "#MON LEAGUE!"
 	prompt
 
 _EnemiesOnEverySideText::
-	text "Enemies on every"
-	line "side!"
+	text "Neprijatelji" ; "Enemies on every"
+	line "sa svih strana!" ; "side!"
 	done
 
 _WhatGoesAroundComesAroundText::
-	text "What goes around"
-	line "comes around!"
+	text "Kako seješ," ; "What goes around"
+	line "tako žanješ!" ; "comes around!"
 	done
 
 _FightingDojoText::
-	text "FIGHTING DOJO"
+	text "BORBENI DODŽO" ; "FIGHTING DOJO"
 	done
 
 _IndigoPlateauHQText::
-	text "INDIGO PLATEAU"
-	line "#MON LEAGUE HQ"
+	text "INDIGO PLATO" ; "INDIGO PLATEAU"
+	line "#MON LIGA" ; "#MON LEAGUE HQ"
 	done
 
 _RedBedroomSNESText::
-	text "<PLAYER> is"
-	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+	text "<PLAYER> igra" ; "<PLAYER> is"
+	line "SNES!" ; "playing the SNES!"
+	cont "...Dobro!" ; "...Okay!"
+	cont "Vreme je za put!" ; "It's time to go!"
 	done
 
 _Route15UpstairsBinocularsText::
-	text "Looked into the"
-	line "binoculars..."
+	text "Pogledao si kroz" ; "Looked into the"
+	line "dvogled..." ; "binoculars..."
 
-	para "A large, shining"
-	line "bird is flying"
-	cont "toward the sea."
+	para "Velika, sjajna" ; "A large, shining"
+	line "ptica leti" ; "bird is flying"
+	cont "ka moru." ; "toward the sea."
 	done
 
 _AerodactylFossilText::
-	text "AERODACTYL Fossil"
-	line "A primitive and"
-	cont "rare #MON."
+	text "AERODAKT fosil" ; "AERODACTYL Fossil"
+	line "Prastari i" ; "A primitive and"
+	cont "retki #MON." ; "rare #MON."
 	done
 
 _KabutopsFossilText::
-	text "KABUTOPS Fossil"
-	line "A primitive and"
-	cont "rare #MON."
+	text "KABUTOPS fosil" ; "KABUTOPS Fossil"
+	line "Prastari i" ; "A primitive and"
+	cont "retki #MON." ; "rare #MON."
 	done
 
 _LinkCableHelpText1::
-	text "TRAINER TIPS"
+	text "SAVETI" ; "TRAINER TIPS"
 
-	para "Using a Game Link"
-	line "Cable"
+	para "Korišćenje Game" ; "Using a Game Link"
+	line "Link Cable" ; "Cable"
 	prompt
 
 _LinkCableHelpText2::
-	text "Which heading do"
-	line "you want to read?"
+	text "Koji naslov" ; "Which heading do"
+	line "želiš da čitaš?" ; "you want to read?"
 	done
 
 _LinkCableInfoText1::
-	text "When you have"
-	line "linked your GAME"
-	cont "BOY with another"
-	cont "GAME BOY, talk to"
-	cont "the attendant on"
-	cont "the right in any"
-	cont "#MON CENTER."
+	text "Kad povežeš" ; "When you have"
+	line "GAME BOY sa" ; "linked your GAME"
+	cont "drugim GAME BOY," ; "BOY with another"
+	cont "pričaj sa" ; "GAME BOY, talk to"
+	cont "službenikom desno" ; "the attendant on"
+	cont "u svakom" ; "the right in any"
+	cont "#MON CENTAR." ; "#MON CENTER."
 	prompt
 
 _LinkCableInfoText2::
-	text "COLOSSEUM lets"
-	line "you play against"
-	cont "a friend."
+	text "KOLOSEUM ti" ; "COLOSSEUM lets"
+	line "dozvoljava borbu" ; "you play against"
+	cont "sa prijateljem." ; "a friend."
 	prompt
 
 _LinkCableInfoText3::
-	text "TRADE CENTER is"
-	line "used for trading"
-	cont "#MON."
+	text "CENTAR RAZMENE" ; "TRADE CENTER is"
+	line "služi za razmenu" ; "used for trading"
+	cont "#MON." ; "#MON."
 	prompt
 
 _ViridianSchoolBlackboardText1::
-	text "The blackboard"
-	line "describes #MON"
-	cont "STATUS changes"
-	cont "during battles."
+	text "Tabla opisuje" ; "The blackboard"
+	line "#MON" ; "describes #MON"
+	cont "STATUS promene" ; "STATUS changes"
+	cont "u borbi." ; "during battles."
 	prompt
 
 _ViridianSchoolBlackboardText2::
-	text "Which heading do"
-	line "you want to read?"
+	text "Koji naslov" ; "Which heading do"
+	line "želiš da čitaš?" ; "you want to read?"
 	done
 
 _ViridianBlackboardSleepText::
-	text "A #MON can't"
-	line "attack if it's"
-	cont "asleep!"
+	text "#MON ne može" ; "A #MON can't"
+	line "da napadne kad" ; "attack if it's"
+	cont "spava!" ; "asleep!"
 
-	para "#MON will stay"
-	line "asleep even after"
-	cont "battles."
+	para "#MON ostaje" ; "#MON will stay"
+	line "uspavan i posle" ; "asleep even after"
+	cont "borbe." ; "battles."
 
-	para "Use AWAKENING to"
-	line "wake them up!"
+	para "Koristi RAZBUÐ." ; "Use AWAKENING to"
+	line "da ga probudiš!" ; "wake them up!"
 	prompt
 
 _ViridianBlackboardPoisonText::
-	text "When poisoned, a"
-	line "#MON's health"
-	cont "steadily drops."
+	text "Kad je otrovan," ; "When poisoned, a"
+	line "#MON gubi" ; "#MON's health"
+	cont "zdravlje stalno." ; "steadily drops."
 
-	para "Poison lingers"
-	line "after battles."
+	para "Otrov ostaje" ; "Poison lingers"
+	line "posle borbe." ; "after battles."
 
-	para "Use an ANTIDOTE"
-	line "to cure poison!"
+	para "Koristi PROTIVOT." ; "Use an ANTIDOTE"
+	line "za lečenje!" ; "to cure poison!"
 	prompt
 
 _ViridianBlackboardPrlzText::
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
+	text "Paraliza može da" ; "Paralysis could"
+	line "pokvari #MON" ; "make #MON"
+	cont "poteze!" ; "moves misfire!"
 
-	para "Paralysis remains"
-	line "after battles."
+	para "Paraliza ostaje" ; "Paralysis remains"
+	line "posle borbe." ; "after battles."
 
-	para "Use PARLYZ HEAL"
-	line "for treatment!"
+	para "Koristi LEK PARA." ; "Use PARLYZ HEAL"
+	line "za lečenje!" ; "for treatment!"
 	prompt
 
 _ViridianBlackboardBurnText::
-	text "A burn reduces"
-	line "power and speed."
-	cont "It also causes"
-	cont "ongoing damage."
+	text "Opekotina smanjuje" ; "A burn reduces"
+	line "snagu i brzinu." ; "power and speed."
+	cont "I nanosi" ; "It also causes"
+	cont "stalnu štetu." ; "ongoing damage."
 
-	para "Burns remain"
-	line "after battles."
+	para "Opekotine ostaju" ; "Burns remain"
+	line "posle borbe." ; "after battles."
 
-	para "Use BURN HEAL to"
-	line "cure a burn!"
+	para "Koristi LEK OPEK." ; "Use BURN HEAL to"
+	line "za lečenje!" ; "cure a burn!"
 	prompt
 
 _ViridianBlackboardFrozenText::
-	text "If frozen, a"
-	line "#MON becomes"
-	cont "totally immobile!"
+	text "Ako je zaleđen," ; "If frozen, a"
+	line "#MON postaje" ; "#MON becomes"
+	cont "skroz nepokretan!" ; "totally immobile!"
 
-	para "It stays frozen"
-	line "even after the"
-	cont "battle ends."
+	para "Ostaje zaleđen" ; "It stays frozen"
+	line "i posle kraja" ; "even after the"
+	cont "borbe." ; "battle ends."
 
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+	para "Koristi LEK MRAZA" ; "Use ICE HEAL to"
+	line "da odledi #MON!" ; "thaw out #MON!"
 	prompt
 
 _VermilionGymTrashText::
-	text "Nope, there's"
-	line "only trash here."
+	text "Ne, ovde je" ; "Nope, there's"
+	line "samo smeće." ; "only trash here."
 	done
 
 _VermilionGymTrashSuccessText1::
-	text "Hey! There's a"
-	line "switch under the"
-	cont "trash!"
-	cont "Turn it on!"
+	text "Hej! Ispod" ; "Hey! There's a"
+	line "smeća je prekidač!" ; "switch under the"
+	cont "" ; "trash!"
+	cont "Uključi ga!" ; "Turn it on!"
 
-	para "The 1st electric"
-	line "lock opened!@"
+	para "Prva el. brava" ; "The 1st electric"
+	line "je otvorena!@" ; "lock opened!@"
 	text_end
 
 _VermilionGymTrashSuccessText2::
-	text "Hey! There's"
-	line "another switch"
-	cont "under the trash!"
-	cont "Turn it on!"
+	text "Hej! Ispod je" ; "Hey! There's"
+	line "još jedan" ; "another switch"
+	cont "prekidač!" ; "under the trash!"
+	cont "Uključi ga!" ; "Turn it on!"
 	prompt
 
 _VermilionGymTrashSuccessText3::
-	text "The 2nd electric"
-	line "lock opened!"
+	text "Druga el. brava" ; "The 2nd electric"
+	line "je otvorena!" ; "lock opened!"
 
-	para "The motorized door"
-	line "opened!@"
+	para "Motoriz. vrata" ; "The motorized door"
+	line "su otvorena!@" ; "opened!@"
 	text_end
 
 _VermilionGymTrashFailText::
-	text "Nope! There's"
-	line "only trash here."
-	cont "Hey! The electric"
-	cont "locks were reset!@"
+	text "Ne! Ovde je" ; "Nope! There's"
+	line "samo smeće." ; "only trash here."
+	cont "Hej! El. brave" ; "Hey! The electric"
+	cont "su resetovane.@" ; "locks were reset!@"
 	text_end
 
 _FoundHiddenItemText::
-	text "<PLAYER> found"
-	line "@"
+	text "<PLAYER> našao" ; "<PLAYER> found"
+	line "@" ; "@"
 	text_ram wNameBuffer
-	text "!@"
+	text "!@" ; "!@"
 	text_end
 
 _HiddenItemBagFullText::
-	text "But, <PLAYER> has"
-	line "no more room for"
-	cont "other items!"
+	text "Ali <PLAYER> nema" ; "But, <PLAYER> has"
+	line "više mesta za" ; "no more room for"
+	cont "druge predmete!" ; "other items!"
 	done
 
 _FoundHiddenCoinsText::
-	text "<PLAYER> found"
-	line "@"
+	text "<PLAYER> našao" ; "<PLAYER> found"
+	line "@" ; "@"
 	text_bcd hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
-	text " coins!@"
+	text " žetona!@" ; " coins!@"
 	text_end
 
 _FoundHiddenCoins2Text::
-	text "<PLAYER> found"
-	line "@"
+	text "<PLAYER> našao" ; "<PLAYER> found"
+	line "@" ; "@"
 	text_bcd hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
-	text " coins!@"
+	text " žetona!@" ; " coins!@"
 	text_end
 
 _DroppedHiddenCoinsText::
 	text_start
-	para "Oops! Dropped"
-	line "some coins!"
+	para "Ups! Ispali su" ; "Oops! Dropped"
+	line "neki žetoni!" ; "some coins!"
 	done
 
 _IndigoPlateauStatuesText1::
-	text "INDIGO PLATEAU"
+	text "INDIGO PLATO" ; "INDIGO PLATEAU"
 	prompt
 
 _IndigoPlateauStatuesText2::
-	text "The ultimate goal"
-	line "of trainers!"
-	cont "#MON LEAGUE HQ"
-	done
+	text "Krajnji cilj" ; "The ultimate goal"
+	line "svih trenera!" ; "of trainers!"
+	cont "#MON LIGA" ; "#MON LEAGUE HQ"
 
 _IndigoPlateauStatuesText3::
-	text "The highest"
-	line "#MON authority"
-	cont "#MON LEAGUE HQ"
+	text "Najviši" ; "The highest"
+	line "#MON autoritet" ; "#MON authority"
+	cont "#MON LIGA" ; "#MON LEAGUE HQ"
 	done
 
 _PokemonBooksText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "Prepuno" ; "Crammed full of"
+	line "#MON knjiga!" ; "#MON books!"
 	done
 
 _DiglettSculptureText::
-	text "It's a sculpture"
-	line "of DIGLETT."
+	text "To je skulptura" ; "It's a sculpture"
+	line "KOPAČKA." ; "of DIGLETT."
 	done
 
 _ElevatorText::
-	text "This is an"
-	line "elevator."
+	text "Ovo je" ; "This is an"
+	line "lift." ; "elevator."
 	done
 
 _TownMapText::
-	text "A TOWN MAP.@"
+	text "MAPA GRADA.@"; "A TOWN MAP.@"
 	text_end
 
 _PokemonStuffText::
-	text "Wow! Tons of"
-	line "#MON stuff!"
+	text "Vau! Brdo" ; "Wow! Tons of"
+	line "#MON stvari!" ; "#MON stuff!"
 	done
 
 _OutOfSafariBallsText::
-	text "PA: Ding-dong!"
+	text "PA: Ding-dong!" ; "PA: Ding-dong!"
 
-	para "You are out of"
-	line "SAFARI BALLs!"
+	para "Nemaš više" ; "You are out of"
+	line "SAFARI LOPTE!" ; "SAFARI BALLs!"
 	prompt
 
 _WildRanText::
-	text "Wild @"
+	text "Divlji @" ; "Wild @"
 	text_ram wEnemyMonNick
 	text_start
-	line "ran!"
+	line "pobegao!" ; "ran!"
 	prompt
 
 _EnemyRanText::
-	text "Enemy @"
+	text "Protivnik @" ; "Enemy @"
 	text_ram wEnemyMonNick
 	text_start
-	line "ran!"
+	line "pobegao!" ; "ran!"
 	prompt
 
 _HurtByPoisonText::
-	text "<USER>'s"
-	line "hurt by poison!"
+	text "<USER>-u" ; "<USER>'s"
+	line "šteti otrov!" ; "hurt by poison!"
 	prompt
 
 _HurtByBurnText::
-	text "<USER>'s"
-	line "hurt by the burn!"
+	text "<USER>-a" ; "<USER>'s"
+	line "peče opekotina!" ; "hurt by the burn!"
 	prompt
 
 _HurtByLeechSeedText::
-	text "LEECH SEED saps"
-	line "<USER>!"
+	text "SEMENKA isis." ; "LEECH SEED saps"
+	line "<USER>!" ; "<USER>!"
 	prompt
 
 _EnemyMonFaintedText::
-	text "Enemy @"
+	text "Protivnički @" ; "Enemy @"
 	text_ram wEnemyMonNick
 	text_start
-	line "fainted!"
+	line "je pao!" ; "fainted!"
 	prompt
 
 _MoneyForWinningText::
-	text "<PLAYER> got ¥@"
+	text "<PLAYER> dobio ¥@" ; "<PLAYER> got ¥@"
 	text_bcd wAmountMoneyWon, 3 | LEADING_ZEROES | LEFT_ALIGN
 	text_start
-	line "for winning!"
+	line "za pobedu!" ; "for winning!"
 	prompt
 
 _TrainerDefeatedText::
-	text "<PLAYER> defeated"
-	line "@"
+	text "<PLAYER> pobedio" ; "<PLAYER> defeated"
+	line "@" ; "@"
 	text_ram wTrainerName
-	text "!"
+	text "!" ; "!"
 	prompt
 
 _PlayerMonFaintedText::
 	text_ram wBattleMonNick
 	text_start
-	line "fainted!"
+	line "je pao!" ; "fainted!"
 	prompt
 
 _UseNextMonText::
-	text "Use next #MON?"
+	text "Sledeći #MON?" ; "Use next #MON?"
 	done
 
 _Rival1WinText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: Da! Zar" ; "<RIVAL>: Yeah! Am"
+	line "nisam sjajan?" ; "I great or what?"
 	prompt
 
 _PlayerBlackedOutText2::
-	text "<PLAYER> is out of"
-	line "useable #MON!"
+	text "<PLAYER> nema" ; "<PLAYER> is out of"
+	line "više #MON!" ; "useable #MON!"
 
-	para "<PLAYER> blacked"
-	line "out!"
+	para "<PLAYER> se" ; "<PLAYER> blacked"
+	line "onesvestio!" ; "out!"
 	prompt
 
 _LinkBattleLostText::
-	text "<PLAYER> lost to"
-	line "@"
+	text "<PLAYER> izgubio" ; "<PLAYER> lost to"
+	line "od @" ; "@"
 	text_ram wTrainerName
-	text "!"
+	text "!" ; "!"
 	prompt
 
 _TrainerAboutToUseText::
 	text_ram wTrainerName
-	text " is"
-	line "about to use"
-	cont "@"
+	text " će" ; " is"
+	line "sad koristiti" ; "about to use"
+	cont "@" ; "@"
 	text_ram wEnemyMonNick
-	text "!"
+	text "!" ; "!"
 
-	para "Will <PLAYER>"
-	line "change #MON?"
+	para "Da li će" ; "Will <PLAYER>"
+	line "<PLAYER> menjati" ; "change #MON?"
 	done
 
 _TrainerSentOutText::
 	text_ram wTrainerName
-	text " sent"
-	line "out @"
+	text " je" ; " sent"
+	line "poslao @" ; "out @"
 	text_ram wEnemyMonNick
-	text "!"
+	text "!" ; "!"
 	done
 
 _NoWillText::
-	text "There's no will"
-	line "to fight!"
+	text "Nema volje" ; "There's no will"
+	line "za borbu!" ; "to fight!"
 	prompt
 
 _CantEscapeText::
-	text "Can't escape!"
+	text "Ne možeš pobeći!" ; "Can't escape!"
 	prompt
 
 _NoRunningText::
-	text "No! There's no"
-	line "running from a"
-	cont "trainer battle!"
+	text "Ne! Ne možeš" ; "No! There's no"
+	line "pobeći od" ; "running from a"
+	cont "trenerske borbe!" ; "trainer battle!"
 	prompt
 
 _GotAwayText::
-	text "Got away safely!"
+	text "Bezbedno pobegao!" ; "Got away safely!"
 	prompt
 
 _ItemsCantBeUsedHereText::
-	text "Items can't be"
-	line "used here."
+	text "Predmeti se ne" ; "Items can't be"
+	line "koriste ovde." ; "used here."
 	prompt
 
 _AlreadyOutText::
 	text_ram wBattleMonNick
-	text " is"
-	line "already out!"
+	text " je" ; " is"
+	line "već napolju!" ; "already out!"
 	prompt
 
 _MoveNoPPText::
-	text "No PP left for"
-	line "this move!"
+	text "Nema PP za" ; "No PP left for"  todo: address
+	line "ovaj potez!" ; "this move!"
 	prompt
 
 _MoveDisabledText::
-	text "The move is"
-	line "disabled!"
+	text "Potez je" ; "The move is"
+	line "onesposobljen!" ; "disabled!"
 	prompt
 
 _NoMovesLeftText::
 	text_ram wBattleMonNick
-	text " has no"
-	line "moves left!"
+	text " nema" ; " has no"
+	line "više poteza!" ; "moves left!"
 	done
 
 _MultiHitText::
-	text "Hit the enemy"
+	text "Pogodio" ; "Hit the enemy"
 	line "@"
 	text_decimal wPlayerNumHits, 1, 1
-	text " times!"
+	text " puta!" ; " times!"
 	prompt
 
 _ScaredText::
 	text_ram wBattleMonNick
-	text " is too"
-	line "scared to move!"
+	text " je" ; " is too"
+	line "previše uplašen!" ; "scared to move!"
 	prompt
 
 _GetOutText::
-	text "GHOST: Get out..."
-	line "Get out..."
+	text "DUH: Odlazi..." ; "GHOST: Get out..."
+	line "Odlazi..." ; "Get out..."
 	prompt
 
 _FastAsleepText::
-	text "<USER>"
-	line "is fast asleep!"
+	text "<USER>" ; "<USER>"
+	line "tvrdo spava!" ; "is fast asleep!"
 	prompt
 
 _WokeUpText::
-	text "<USER>"
-	line "woke up!"
+	text "<USER>" ; "<USER>"
+	line "se probudio!" ; "woke up!"
 	prompt
 
 _IsFrozenText::
-	text "<USER>"
-	line "is frozen solid!"
+	text "<USER>" ; "<USER>"
+	line "je skroz zaleđen!" ; "is frozen solid!"
 	prompt
 
 _FullyParalyzedText::
-	text "<USER>'s"
-	line "fully paralyzed!"
+	text "<USER>-u" ; "<USER>'s"
+	line "je puna paraliza!" ; "fully paralyzed!"
 	prompt
 
 _FlinchedText::
-	text "<USER>"
-	line "flinched!"
+	text "<USER>" ; "<USER>"
+	line "se trznuo!" ; "flinched!"
 	prompt
 
 _MustRechargeText::
-	text "<USER>"
-	line "must recharge!"
+	text "<USER>" ; "<USER>"
+	line "mora da se puni!" ; "must recharge!"
 	prompt
 
 _DisabledNoMoreText::
-	text "<USER>'s"
-	line "disabled no more!"
+	text "<USER>-u" ; "<USER>'s"
+	line "više nije blok.!" ; "disabled no more!"
 	prompt
 
 _IsConfusedText::
-	text "<USER>"
-	line "is confused!"
+	text "<USER>" ; "<USER>"
+	line "je zbunjen!" ; "is confused!"
 	prompt
 
 _HurtItselfText::
-	text "It hurt itself in"
-	line "its confusion!"
+	text "Povredio se u" ; "It hurt itself in"
+	line "svojoj zbunji!" ; "its confusion!"
 	prompt
 
 _ConfusedNoMoreText::
-	text "<USER>'s"
-	line "confused no more!"
+	text "<USER>-u" ; "<USER>'s"
+	line "zbunjenost prošla!" ; "confused no more!"
 	prompt
 
 _SavingEnergyText::
-	text "<USER>"
-	line "is saving energy!"
+	text "<USER>" ; "<USER>"
+	line "skuplja energiju!" ; "is saving energy!"
 	prompt
 
 _UnleashedEnergyText::
-	text "<USER>"
-	line "unleashed energy!"
+	text "<USER>" ; "<USER>"
+	line "oslobodi energiju!" ; "unleashed energy!"
 	prompt
 
 _ThrashingAboutText::
-	text "<USER>'s"
-	line "thrashing about!"
+	text "<USER>-ov" ; "<USER>'s"
+	line "besni napad!" ; "thrashing about!"
 	done
 
 _AttackContinuesText::
-	text "<USER>'s"
-	line "attack continues!"
+	text "<USER>-ov" ; "<USER>'s"
+	line "napad traje!" ; "attack continues!"
 	done
 
 _CantMoveText::
-	text "<USER>"
-	line "can't move!"
+	text "<USER>" ; "<USER>"
+	line "ne može da se mrda!" ; "can't move!"
 	prompt
 
 _MoveIsDisabledText::
-	text "<USER>'s"
-	line "@"
+	text "<USER>-ov" ; "<USER>'s"
+	line "@" ; "@"
 	text_ram wNameBuffer
-	text " is"
-	cont "disabled!"
+	text " je" ; " is"
+	cont "blokiran!" ; "disabled!"
 	prompt
 
 _ActorNameText::
-	text "<USER>@"
+	text "<USER>@" ; "<USER>@"
 	text_end
 
 _UsedMove1Text::
 	text_start
-	line "used @"
+	line "koristi @" ; "used @"
 	text_end
 
 _UsedMove2Text::
 	text_start
-	line "used @"
+	line "koristi @" ; "used @"
 	text_end
 
 _UsedInsteadText::
-	text "instead,"
-	cont "@"
+	text "umesto," ; "instead,"
+	cont "@" ; "@"
 	text_end
 
 _MoveNameText::
 	text_ram wStringBuffer
-	text "@"
+	text "@" ; "@"
 
 _EndUsedMove1Text::
-	text "!"
+	text "!" ; "!"
 	done
 
 _EndUsedMove2Text::
-	text "!"
+	text "!" ; "!"
 	done
 
 _EndUsedMove3Text::
-	text "!"
+	text "!" ; "!"
 	done
 
 _EndUsedMove4Text::
-	text "!"
+	text "!" ; "!"
 	done
 
 _EndUsedMove5Text::
-	text "!"
+	text "!" ; "!"
 	done
 
 _AttackMissedText::
-	text "<USER>'s"
-	line "attack missed!"
+	text "<USER>-ov" ; "<USER>'s"
+	line "napad promaši!" ; "attack missed!"
 	prompt
 
 _KeptGoingAndCrashedText::
-	text "<USER>"
-	line "kept going and"
-	cont "crashed!"
+	text "<USER>" ; "<USER>"
+	line "je nastavio i" ; "kept going and"
+	cont "slupao se!" ; "crashed!"
 	prompt
 
 _UnaffectedText::
-	text "<TARGET>'s"
-	line "unaffected!"
+	text "<TARGET>-u" ; "<TARGET>'s"
+	line "ne smeta!" ; "unaffected!"
 	prompt
 
 _DoesntAffectMonText::
-	text "It doesn't affect"
-	line "<TARGET>!"
+	text "Ne utiče na" ; "It doesn't affect"
+	line "<TARGET>!" ; "<TARGET>!"
 	prompt
 
 _CriticalHitText::
-	text "Critical hit!"
+	text "Kritičan udarac!" ; "Critical hit!"
 	prompt
 
 _OHKOText::
-	text "One-hit KO!"
+	text "Jednim udarcem!" ; "One-hit KO!"
 	prompt
 
 _LoafingAroundText::
 	text_ram wBattleMonNick
-	text " is"
-	line "loafing around."
+	text " se" ; " is"
+	line "zabušava." ; "loafing around."
 	prompt
 
 _BeganToNapText::
 	text_ram wBattleMonNick
-	text " began"
-	line "to nap!"
+	text " je" ; " began"
+	line "zadremao!" ; "to nap!"
 	prompt
 
 _WontObeyText::
 	text_ram wBattleMonNick
-	text " won't"
-	line "obey!"
+	text " ne" ; " won't"
+	line "sluša!" ; "obey!"
 	prompt
 
 _TurnedAwayText::
 	text_ram wBattleMonNick
-	text " turned"
-	line "away!"
+	text " se" ; " turned"
+	line "okrenuo!" ; "away!"
 	prompt
 
 _IgnoredOrdersText::
 	text_ram wBattleMonNick
 	text_start
-	line "ignored orders!"
+	line "ignoriše naredbe!" ; "ignored orders!"
 	prompt
 
 _SubstituteTookDamageText::
-	text "The SUBSTITUTE"
-	line "took damage for"
-	cont "<TARGET>!"
+	text "ZAMENA je" ; "The SUBSTITUTE"
+	line "primila udarac za" ; "took damage for"
+	cont "<TARGET>!" ; "<TARGET>!"
 	prompt
 
 _SubstituteBrokeText::
-	text "<TARGET>'s"
-	line "SUBSTITUTE broke!"
+	text "<TARGET>-ov" ; "<TARGET>'s"
+	line "ZAMENA puče!" ; "SUBSTITUTE broke!"
 	prompt
 
 _BuildingRageText::
-	text "<USER>'s"
-	line "RAGE is building!"
+	text "<USER>-ov" ; "<USER>'s"
+	line "BES raste!" ; "RAGE is building!"
 	prompt
 
 _MirrorMoveFailedText::
-	text "The MIRROR MOVE"
-	next "failed!"
+	text "OGLEDALO" ; "The MIRROR MOVE"
+	next "nije uspeo!" ; "failed!"
 	prompt
 
 _HitXTimesText::
-	text "Hit @"
+	text "Pogodio @" ; "Hit @"
 	text_decimal wEnemyNumHits, 1, 1
-	text " times!"
+	text " puta!" ; " times!"
 	prompt
 
 _GainedText::
 	text_ram wNameBuffer
-	text " gained"
-	line "@"
+	text " dobio" ; " gained"
+	line "@" ; "@"
 	text_end
 
 _WithExpAllText::
-	text "with EXP.ALL,"
-	cont "@"
+	text "uz ISK. SVIMA" ; "with EXP.ALL,"
+	cont "@" ; "@"
 	text_end
 
 _BoostedText::
-	text "a boosted"
-	cont "@"
+	text "pojačanih" ; "a boosted"
+	cont "@" ; "@"
 	text_end
 
 _ExpPointsText::
 	text_decimal wExpAmountGained, 2, 4
-	text " EXP. Points!"
+	text " ISK. poena!" ; " EXP. Points!"
 	prompt
 
 _GrewLevelText::
 	text_ram wNameBuffer
-	text " grew"
-	line "to level @"
+	text " je" ; " grew"
+	line "na nivo @" ; "to level @"
 	text_decimal wCurEnemyLevel, 1, 3
-	text "!@"
+	text "!@" ; "!@"
 	text_end
 
 _WildMonAppearedText::
-	text "Wild @"
+	text "Divlji @" ; "Wild @"
 	text_ram wEnemyMonNick
 	text_start
-	line "appeared!"
+	line "se pojavio!" ; "appeared!"
 	prompt
 
 _HookedMonAttackedText::
-	text "The hooked"
-	line "@"
+	text "Upecani" ; "The hooked"
+	line "@" ; "@"
 	text_ram wEnemyMonNick
 	text_start
-	cont "attacked!"
+	cont "napade!" ; "attacked!"
 	prompt
 
 _EnemyAppearedText::
 	text_ram wEnemyMonNick
 	text_start
-	line "appeared!"
+	line "se pojavio!" ; "appeared!"
 	prompt
 
 _TrainerWantsToFightText::
 	text_ram wTrainerName
-	text " wants"
-	line "to fight!"
+	text " želi" ; " wants"
+	line "da se bori!" ; "to fight!"
 	prompt
 
 _UnveiledGhostText::
-	text "SILPH SCOPE"
-	line "unveiled the"
-	cont "GHOST's identity!"
+	text "VIZOR SILF-a" ; "SILPH SCOPE"
+	line "otkri" ; "unveiled the"
+	cont "ko je DUH!" ; "GHOST's identity!"
 	prompt
 
 _GhostCantBeIDdText::
-	text "Darn! The GHOST"
-	line "can't be ID'd!"
+	text "Šteta! DUH" ; "Darn! The GHOST"
+	line "ne može da se ID!" ; "can't be ID'd!"
 	prompt
 
 _GoText::
-	text "Go! @"
+	text "Kreni! @" ; "Go! @"
 	text_end
 
 _DoItText::
-	text "Do it! @"
+	text "Uradi to! @" ; "Do it! @"
 	text_end
 
 _GetmText::
-	text "Get'm! @"
+	text "Napadni! @" ; "Get'm! @"
 	text_end
 
 _EnemysWeakText::
-	text "The enemy's weak!"
-	line "Get'm! @"
+	text "Protivnik slabi!" ; "The enemy's weak!"
+	line "Napadni! @" ; "Get'm! @"
 	text_end
 
 _PlayerMon1Text::
 	text_ram wBattleMonNick
-	text "!"
+	text "!" ; "!"
 	done
 
 _PlayerMon2Text::
 	text_ram wBattleMonNick
-	text " @"
+	text " @" ; " @"
 	text_end
 
 _EnoughText::
-	text "enough!@"
+	text "dosta!@" ; "enough!@"
 	text_end
 
 _OKExclamationText::
-	text "OK!@"
+	text "OK!@" ; "OK!@"
 	text_end
 
 _GoodText::
-	text "good!@"
+	text "dobro!@" ; "good!@"
 	text_end
 
 _ComeBackText::
 	text_start
-	line "Come back!"
+	line "Vrati se!" ; "Come back!"
 	done
 
 _SuperEffectiveText::
-	text "It's super"
-	line "effective!"
+	text "Baš je" ; "It's super"
+	line "delotvorno!" ; "effective!"
 	prompt
 
 _NotVeryEffectiveText::
-	text "It's not very"
-	line "effective..."
+	text "Nije baš" ; "It's not very"
+	line "delotvorno..." ; "effective..."
 	prompt
 
 _SafariZoneEatingText::
-	text "Wild @"
+	text "Divlji @" ; "Wild @"
 	text_ram wEnemyMonNick
 	text_start
-	line "is eating!"
+	line "jede!" ; "is eating!"
 	prompt
 
 _SafariZoneAngryText::
-	text "Wild @"
+	text "Divlji @" ; "Wild @"
 	text_ram wEnemyMonNick
 	text_start
-	line "is angry!"
+	line "je ljut!" ; "is angry!"
 	prompt
 
 ; money related
 _PickUpPayDayMoneyText::
-	text "<PLAYER> picked up"
-	line "¥@"
+	text "<PLAYER> pokupio" ; "<PLAYER> picked up"
+	line "je ¥@" ; "¥@"
 	text_bcd wTotalPayDayMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text "!"
+	text "!" ; "!"
 	prompt
 
 _ClearSaveDataText::
-	text "Clear all saved"
-	line "data?"
+	text "Obriši sve" ; "Clear all saved"
+	line "sačuvane podatke?" ; "data?"
 	done
 
 _WhichFloorText::
-	text "Which floor do"
-	line "you want? "
+	text "Koji sprat" ; "Which floor do"
+	line "želiš? " ; "you want? "
 	done
 
 _PartyMenuNormalText::
-	text "Choose a #MON."
+	text "Izaberi #MON." ; "Choose a #MON."
 	done
 
 _PartyMenuItemUseText::
-	text "Use item on which"
-	line "#MON?"
+	text "Na kog #MON" ; "Use item on which"
+	line "da koristiš?" ; "#MON?"
 	done
 
 _PartyMenuBattleText::
-	text "Bring out which"
-	line "#MON?"
+	text "Kog #MON" ; "Bring out which"
+	line "izvesti?" ; "#MON?"
 	done
 
 _PartyMenuUseTMText::
-	text "Use TM on which"
-	line "#MON?"
+	text "Na kog #MON" ; "Use TM on which"
+	line "TM?" ; "#MON?"
 	done
 
 _PartyMenuSwapMonText::
-	text "Move #MON"
-	line "where?"
+	text "Premesti #MON" ; "Move #MON"
+	line "gde?" ; "where?"
 	done
 
 _PotionText::
 	text_ram wNameBuffer
 	text_start
-	line "recovered by @"
+	line "oporavio se za @" ; "recovered by @"
 	text_decimal wHPBarHPDifference, 2, 3
-	text "!"
+	text "!" ; "!"
 	done
 
 _AntidoteText::
 	text_ram wNameBuffer
-	text " was"
-	line "cured of poison!"
+	text " je" ; " was"
+	line "izlečen od otrova!" ; "cured of poison!"
 	done
 
 _ParlyzHealText::
 	text_ram wNameBuffer
-	text "'s"
-	line "rid of paralysis!"
+	text "'s" ; "'s"
+	line "bez paralize!" ; "rid of paralysis!"
 	done
 
 _BurnHealText::
 	text_ram wNameBuffer
-	text "'s"
-	line "burn was healed!"
+	text "'s" ; "'s"
+	line "opek. izlečena!" ; "burn was healed!"
 	done
 
 _IceHealText::
 	text_ram wNameBuffer
-	text " was"
-	line "defrosted!"
+	text " je" ; " was"
+	line "odleđen!" ; "defrosted!"
 	done
 
 _AwakeningText::
 	text_ram wNameBuffer
 	text_start
-	line "woke up!"
+	line "se probudio!" ; "woke up!"
 	done
 
 _FullHealText::
 	text_ram wNameBuffer
-	text "'s"
-	line "health returned!"
+	text "'s" ; "'s"
+	line "zdravlje vraćeno!" ; "health returned!"
 	done
 
 _ReviveText::
 	text_ram wNameBuffer
 	text_start
-	line "is revitalized!"
+	line "je oživljen!" ; "is revitalized!"
 	done
 
 _RareCandyText::
 	text_ram wNameBuffer
-	text " grew"
-	line "to level @"
+	text " je" ; " grew"
+	line "na nivo @" ; "to level @"
 	text_decimal wCurEnemyLevel, 1, 3
-	text "!@"
+	text "!@" ; "!@"
 	text_end
 
 _TurnedOnPC1Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER>" ; "<PLAYER> turned on"
+	line "uključio je PC." ; "the PC."
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
-	line "PC."
+	text "Pristup BIL-ovom" ; "Accessed BILL's"
+	line "PC." ; "PC."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "Pristupio sistem" ; "Accessed #MON"
+	line "čuvanje #MON." ; "Storage System."
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Accessed someone's"
-	line "PC."
+	text "Pristupio nečijem" ; "Accessed someone's"
+	line "PC." ; "PC."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "Pristupio sistem" ; "Accessed #MON"
+	line "čuvanja #MON." ; "Storage System."
 	prompt
 
 _AccessedMyPCText::
-	text "Accessed my PC."
+	text "Pristupio mom PC." ; "Accessed my PC."
 
-	para "Accessed Item"
-	line "Storage System."
+	para "Pristupio sistem" ; "Accessed Item"
+	line "čuvanja stvari." ; "Storage System."
 	prompt
 
 _TurnedOnPC2Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER>" ; "<PLAYER> turned on"
+	line "uključio je PC." ; "the PC."
 	prompt
 
 _WhatDoYouWantText::
-	text "What do you want"
-	line "to do?"
+	text "Šta želiš" ; "What do you want"
+	line "da radiš?" ; "to do?"
 	done
 
 _WhatToDepositText::
-	text "What do you want"
-	line "to deposit?"
+	text "Šta želiš" ; "What do you want"
+	line "da odložiš?" ; "to deposit?"
 	done
 
 _DepositHowManyText::
-	text "How many?"
+	text "Koliko?" ; "How many?"
 	done
 
 _ItemWasStoredText::
 	text_ram wNameBuffer
-	text " was"
-	line "stored via PC."
+	text " je" ; " was"
+	line "odložen preko PC." ; "stored via PC."
 	prompt
 
 _NothingToDepositText::
-	text "You have nothing"
-	line "to deposit."
+	text "Nemaš ništa" ; "You have nothing"
+	line "za odlaganje." ; "to deposit."
 	prompt
 
 _NoRoomToStoreText::
-	text "No room left to"
-	line "store items."
+	text "Nema mesta za" ; "No room left to"
+	line "čuvanje stvari." ; "store items."
 	prompt
 
 _WhatToWithdrawText::
-	text "What do you want"
-	line "to withdraw?"
+	text "Šta želiš" ; "What do you want"
+	line "da uzmeš?" ; "to withdraw?"
 	done
 
 _WithdrawHowManyText::
-	text "How many?"
+	text "Koliko?" ; "How many?"
 	done
 
 _WithdrewItemText::
-	text "Withdrew"
-	line "@"
+	text "Uzeo je" ; "Withdrew"
+	line "@" ; "@"
 	text_ram wNameBuffer
-	text "."
+	text "." ; "."
 	prompt
 
 _NothingStoredText::
-	text "There is nothing"
-	line "stored."
+	text "Nema ničeg" ; "There is nothing"
+	line "odloženog." ; "stored."
 	prompt
 
 _CantCarryMoreText::
-	text "You can't carry"
-	line "any more items."
+	text "Ne možeš nositi" ; "You can't carry"
+	line "više stvari." ; "any more items."
 	prompt
 
 _WhatToTossText::
-	text "What do you want"
-	line "to toss away?"
+	text "Šta želiš" ; "What do you want"
+	line "da baciš?" ; "to toss away?"
 	done
 
 _TossHowManyText::
-	text "How many?"
+	text "Koliko?" ; "How many?"
 	done
 
 _AccessedHoFPCText::
-	text "Accessed #MON"
-	line "LEAGUE's site."
+	text "Pristupio sajtu" ; "Accessed #MON"
+	line "#MON LIGE." ; "LEAGUE's site."
 
-	para "Accessed the HALL"
-	line "OF FAME List."
+	para "Pristupio listu" ; "Accessed the HALL"
+	line "KUĆE SLAVNIH." ; "OF FAME List."
 	prompt
 
 _SwitchOnText::
-	text "Switch on!"
+	text "Uključi!" ; "Switch on!"
 	prompt
 
 _WhatText::
-	text "What?"
+	text "Šta?" ; "What?"
 	done
 
 _DepositWhichMonText::
-	text "Deposit which"
-	line "#MON?"
+	text "Kog #MON" ; "Deposit which"
+	line "da odložiš?" ; "#MON?"
 	done
 
 _MonWasStoredText::
 	text_ram wStringBuffer
-	text " was"
-	line "stored in Box @"
+	text " je" ; " was"
+	line "u Kut. @" ; "stored in Box @"
 	text_ram wBoxNumString
-	text "."
+	text "." ; "."
 	prompt
 
 _CantDepositLastMonText::
-	text "You can't deposit"
-	line "the last #MON!"
+	text "Ne možeš odložiti" ; "You can't deposit"
+	line "posl. #MON!" ; "the last #MON!"
 	prompt
 
 _BoxFullText::
-	text "Oops! This Box is"
-	line "full of #MON."
+	text "Ups! Ovaj Kut." ; "Oops! This Box is"
+	line "je pun #MON." ; "full of #MON."
 	prompt
 
 _MonIsTakenOutText::
 	text_ram wStringBuffer
-	text " is"
-	line "taken out."
-	cont "Got @"
+	text " je" ; " is"
+	line "izvađen." ; "taken out."
+	cont "Uzeo je @" ; "Got @"
 	text_ram wStringBuffer
-	text "."
+	text "." ; "."
 	prompt
 
 _NoMonText::
-	text "What? There are"
-	line "no #MON here!"
+	text "Šta? Ovde nema" ; "What? There are"
+	line "#MON!" ; "no #MON here!"
 	prompt
 
 _CantTakeMonText::
-	text "You can't take"
-	line "any more #MON."
+	text "Ne možeš uzeti" ; "You can't take"
+	line "više #MON." ; "any more #MON."
 
-	para "Deposit #MON"
-	line "first."
+	para "Prvo odloži" ; "Deposit #MON"
+	line "#MON." ; "first."
 	prompt
 
 _ReleaseWhichMonText::
-	text "Release which"
-	line "#MON?"
+	text "Kog #MON" ; "Release which"
+	line "osloboditi?" ; "#MON?"
 	done
 
 _OnceReleasedText::
-	text "Once released,"
-	line "@"
+	text "Kad oslobodiš," ; "Once released,"
+	line "@" ; "@"
 	text_ram wStringBuffer
-	text " is"
-	cont "gone forever. OK?"
+	text " je zauvek" ; " is"
+	cont "slobodan. OK?" ; "gone forever. OK?"
 	done
 
 _MonWasReleasedText::
 	text_ram wStringBuffer
-	text " was"
-	line "released outside."
-	cont "Bye @"
+	text " je" ; " was"
+	line "pušten napolje." ; "released outside."
+	cont "Ćao @" ; "Bye @"
 	text_ram wStringBuffer
-	text "!"
+	text "!" ; "!"
 	prompt
 
 _RequireCoinCaseText::
-	text "A COIN CASE is"
-	line "required!@"
+	text "Treba KUT. NOV.!@" ; "A COIN CASE is"
+	line "@" ; "required!@"
 	text_end
 
 _ExchangeCoinsForPrizesText::
-	text "We exchange your"
-	line "coins for prizes."
+	text "Menjamo tvoje" ; "We exchange your"
+	line "žetone za nagr." ; "coins for prizes."
 	prompt
 
 _WhichPrizeText::
-	text "Which prize do"
-	line "you want?"
+	text "Koju nagradu" ; "Which prize do"
+	line "želiš?" ; "you want?"
 	done
 
 _HereYouGoText::
-	text "Here you go!@"
+	text "Izvoli!@" ; "Here you go!@"
 	text_end
 
 _SoYouWantPrizeText::
-	text "So, you want"
-	line "@"
+	text "Dakle, želiš" ; "So, you want"
+	line "@" ; "@"
 	text_ram wNameBuffer
-	text "?"
+	text "?" ; "?"
 	done
 
 _SorryNeedMoreCoinsText::
-	text "Sorry, you need"
-	line "more coins.@"
+	text "Žao mi je, treba" ; "Sorry, you need"
+	line "više žetona.@"; "more coins.@"
 	text_end
 
 _OopsYouDontHaveEnoughRoomText::
-	text "Oops! You don't"
-	line "have enough room.@"
+	text "Ups! Nemaš" ; "Oops! You don't"
+	line "dovoljno mesta.@"; "have enough room.@"
 	text_end
 
 _OhFineThenText::
-	text "Oh, fine then.@"
+	text "O, dobro onda.@"; "Oh, fine then.@"
 	text_end
 
 _GetDexRatedText::
-	text "Want to get your"
-	line "#DEX rated?"
+	text "Hoćeš da ti" ; "Want to get your"
+	line "ocenim #DEX?" ; "#DEX rated?"
 	done
 
 _ClosedOaksPCText::
-	text "Closed link to"
-	line "PROF.OAK's PC.@"
+	text "Veza sa PROF." ; "Closed link to"
+	line "HRAST-ovog PC.@"; "PROF.OAK's PC.@"
 	text_end
 
 _AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
+	text "Pristup PROF." ; "Accessed PROF."
+	line "HRAST-ovog PC." ; "OAK's PC."
 
-	para "Accessed #DEX"
-	line "Rating System."
+	para "Pristup #DEX" ; "Accessed #DEX"
+	line "Rating System." ; "Rating System."
 	prompt
 
 _WhereWouldYouLikeText::
-	text "Where would you"
-	line "like to go?"
+	text "Gde bi" ; "Where would you"
+	line "želeo da ideš?" ; "like to go?"
 	done
 
 _PleaseWaitText::
-	text "OK, please wait"
-	line "just a moment."
+	text "OK, sačekaj" ; "OK, please wait"
+	line "samo trenutak." ; "just a moment."
 	done
 
 _LinkCanceledText::
-	text "The link was"
-	line "canceled."
+	text "Veza je" ; "The link was"
+	line "otkazana." ; "canceled."
 	done
 
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "Zdravo!" ; "Hello there!"
+	line "Dobro došao u" ; "Welcome to the"
+	cont "svet #MON!" ; "world of #MON!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "Ja sam HRAST!" ; "My name is OAK!"
+	line "Ljudi me zovu" ; "People call me"
+	cont "#MON PROF!" ; "the #MON PROF!"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
+	text "Ovaj svet je" ; "This world is"
+	line "naseljen" ; "inhabited by"
+	cont "stvorenjima" ; "creatures called"
+	cont "zvanim #MON!@" ; "#MON!@"
 	text_end
 
 _OakSpeechText2B::
 	text_start
 
-	para "For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	para "Za neke ljude," ; "For some people,"
+	line "#MON su" ; "#MON are"
+	cont "ljubimci Drugi ih" ; "pets. Others use"
+	cont "koriste za borbe." ; "them for fights."
 
-	para "Myself..."
+	para "Ja..." ; "Myself..."
 
-	para "I study #MON"
-	line "as a profession."
+	para "Proučavam #MON" ; "I study #MON"
+	line "kao profesiju." ; "as a profession."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "Prvo, kako se" ; "First, what is"
+	line "zoveš?" ; "your name?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "Ovo je moj unuk." ; "This is my grand-"
+	line "On ti je rival" ; "son. He's been"
+	cont "još od bebe." ; "your rival since"
+	cont "" ; "you were a baby."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "...Hm, kako se" ; "...Erm, what is"
+	line "ono beše zove?" ; "his name again?"
 	prompt
 
 _OakSpeechText3::
-	text "<PLAYER>!"
+	text "<PLAYER>!" ; "<PLAYER>!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "Tvoja lična" ; "Your very own"
+	line "#MON legenda" ; "#MON legend is"
+	cont "sad počinje!" ; "about to unfold!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "Svet snova i" ; "A world of dreams"
+	line "avantura sa" ; "and adventures"
+	cont "#MON" ; "with #MON"
+	cont "te čeka! Hajde!" ; "awaits! Let's go!"
 	done
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "Da li želiš" ; "Do you want to"
+	line "da daš nadimak" ; "give a nickname"
+	cont "@" ; "to @"
 	text_ram wNameBuffer
-	text "?"
+	text "?" ; "?"
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	text "Dakle, tvoje" ; "Right! So your"
+	line "ime je <PLAYER>!" ; "name is <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "Tačno! Sad se" ; "That's right! I"
+	line "sećam! Zove se" ; "remember now! His"
+	cont "<RIVAL>!" ; "name is <RIVAL>!"
 	prompt
 
 _WillBeTradedText::
 	text_ram wNameOfPlayerMonToBeTraded
-	text " and"
-	line "@"
+	text " i" ; " and"
+	line "@" ; "@"
 	text_ram wNameBuffer
-	text " will"
-	cont "be traded."
+	text " će" ; " will"
+	cont "biti razmenjeni." ; "be traded."
 	done
 
 _TextIDErrorText::
 	text_decimal hTextID, 1, 2
-	text " ERROR."
+	text " GREŠKA." ; " ERROR."
 	done
 
 _ContCharText::
-	text "<_CONT>@"
+	text "<_CONT>@" ; "<_CONT>@"
 	text_end

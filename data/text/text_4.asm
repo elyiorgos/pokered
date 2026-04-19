@@ -1,4 +1,4 @@
-_PokemartGreetingText::
+_PokemartGreetingText:: ; todo: translate
 	text "Hi there!"
 	next "May I help you?"
 	done

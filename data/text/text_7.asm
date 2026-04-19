@@ -1,4 +1,4 @@
-_ItemUseText001::
+_ItemUseText001:: ; todo: translate
 	text "<PLAYER> used@"
 	text_end
 

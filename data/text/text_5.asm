@@ -1,4 +1,4 @@
-_CableClubNPCPleaseComeAgainText::
+_CableClubNPCPleaseComeAgainText:: ; todo: translate
 	text "Please come again!"
 	done
 

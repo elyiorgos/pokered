@@ -98,7 +98,7 @@ DiplomaTextPointersAndCoords:
 	diploma_text  9, 16, DiplomaGameFreak
 
 DiplomaText:
-	db CIRCLE_TILE_ID, "Diploma", CIRCLE_TILE_ID, "@"
+	db CIRCLE_TILE_ID, "Diploma", CIRCLE_TILE_ID, "@"  ; todo: translate
 
 DiplomaPlayer:
 	db "Player@"

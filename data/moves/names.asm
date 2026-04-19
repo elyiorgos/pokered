@@ -4,12 +4,12 @@ MoveNames::
 	li "UDARAC"        ; POUND -> neutralan kratak prevod
 	li "KARATE UDAR"   ; KARATE CHOP -> skraćeno da stane
 	li "DVOŠAMAR"      ; DOUBLESLAP -> prirodno i kratko
-	li "KOMET UDAR"    ; COMET PUNCH -> zadržan motiv komete
-	li "MEGA UDAR"     ; MEGA PUNCH -> prirodno skraćenje
+	li "KOMET-UDAR"    ; COMET PUNCH -> zadržan motiv komete
+	li "MEGA-UDAR"     ; MEGA PUNCH -> prirodno skraćenje
 	li "ISPLATA"       ; PAY DAY -> idiomatski, ne doslovno "dan plate"
 	li "VATR. UDAR"    ; FIRE PUNCH -> skraćeno, period upotrebljen zbog limita
 	li "LED. UDAR"     ; ICE PUNCH -> skraćeno, period upotrebljen zbog limita
-	li "GROM UDAR"     ; THUNDERPUNCH -> prirodno skraćenje
+	li "GROM. UDAR"    ; THUNDERPUNCH -> prirodno skraćenje
 	li "GREBANJE"      ; SCRATCH -> prirodan imenicki oblik
 	li "STISAK"        ; VICEGRIP -> kratko i jasno
 	li "GILJOTINA"     ; GUILLOTINE -> direktan prevod
@@ -24,17 +24,17 @@ MoveNames::
 	li "TRESAK"        ; SLAM -> prirodnije od doslovnog "slam"
 	li "BIČ LOZE"      ; VINE WHIP -> idiomatski i kratak
 	li "GAŽENJE"       ; STOMP -> prirodan prevod
-	li "DUPLI ŠUT"     ; DOUBLE KICK -> prirodno skraćenje
+	li "DUPLI-ŠUT"     ; DOUBLE KICK -> prirodno skraćenje
 	li "MEGA ŠUT"      ; MEGA KICK -> prirodno skraćenje
-	li "SKOK ŠUT"      ; JUMP KICK -> prirodno i kratko
-	li "OKRET ŠUT"     ; ROLLING KICK -> kraće od doslovnog prevoda
+	li "SKOK-ŠUT"      ; JUMP KICK -> prirodno i kratko
+	li "OKRET-ŠUT"     ; ROLLING KICK -> kraće od doslovnog prevoda
 	li "PESAK"         ; SAND-ATTACK -> skraćeno na efekat
 	li "GLAVOM"        ; HEADBUTT -> idiomatski kraće
-	li "ROG NAPAD"     ; HORN ATTACK -> prirodan prevod
-	li "BES NAPAD"     ; FURY ATTACK -> "fury" sažeto kao bes
-	li "ROG BUŠI"      ; HORN DRILL -> funkcionalan prevod
+	li "ROG. NAPAD"    ; HORN ATTACK -> prirodan prevod
+	li "BES. NAPAD"    ; FURY ATTACK -> "fury" sažeto kao bes
+	li "BUŠ. ROGA"     ; HORN DRILL -> funkcionalan prevod
 	li "NALET"         ; TACKLE -> nalet/juriš, kratko
-	li "TRESAK TELOM"  ; BODY SLAM -> tresak telom
+	li "UDAR TELOM"    ; BODY SLAM -> udar telom
 	li "OBMOTAJ"       ; WRAP -> imperativni stil
 	li "ZALET"         ; TAKE DOWN -> prenosi smisao
 	li "POMAMA"        ; THRASH -> prirodan battle termin
@@ -61,11 +61,11 @@ MoveNames::
 	li "LED ZRAK"      ; ICE BEAM -> skraćeno zbog limita
 	li "MEĆAVA"        ; BLIZZARD -> prirodan prevod
 	li "PSI-ZRAK"      ; PSYBEAM -> sažeto i jasno
-	li "MEHUR ZRAK"    ; BUBBLEBEAM -> prirodno skraćenje
-	li "AURORA ZRAK"   ; AURORA BEAM -> prirodan prevod
+	li "MEHU. ZRAK"    ; BUBBLEBEAM -> prirodno skraćenje
+	li "AURORA"        ; AURORA BEAM -> prirodno skraćenje
 	li "HIPERZRAK"     ; HYPER BEAM -> spojeno da stane
 	li "KLJUC"         ; PECK -> najprirodniji kratak prevod
-	li "KLJUN BUŠI"    ; DRILL PECK -> sažeto
+	li "KLJUN BUŠ."    ; DRILL PECK -> sažeto
 	li "BACANJE"       ; SUBMISSION -> funkcionalno, ne doslovno
 	li "NISKI ŠUT"     ; LOW KICK -> prirodno
 	li "KONTRA"        ; COUNTER -> standardan battle termin
@@ -76,14 +76,14 @@ MoveNames::
 	li "SEMENKA"       ; LEECH SEED -> fokus na gameplay funkciji
 	li "RAST"          ; GROWTH -> najkraće i prirodno
 	li "OŠTAR LIST"    ; RAZOR LEAF -> prirodan prevod
-	li "SOLAR ZRAK"    ; SOLARBEAM -> prirodno skraćenje
+	li "SOLARIA"       ; SOLARBEAM -> slobodan prevod
 	li "OTR. PRAH"     ; POISONPOWDER -> skraćeno, period zbog limita
 	li "OMAMNI PRAH"   ; STUN SPORE -> prirodno rešenje
 	li "USPAVNI PRAH"  ; SLEEP POWDER -> prirodan prevod
 	li "PLES LATICA"   ; PETAL DANCE -> prirodan prevod
 	li "MREŽA"         ; STRING SHOT -> efekat važniji od doslovnosti
 	li "BES ZMAJA"     ; DRAGON RAGE -> prirodno
-	li "VATR. VRTLOG"  ; FIRE SPIN -> skraćeno, period zbog limita
+	li "VAT. VRTLOG"  ; FIRE SPIN -> skraćeno, period zbog limita
 	li "GROMOŠOK"      ; THUNDERSHOCK -> prirodno
 	li "GROMOBOLT"     ; THUNDERBOLT -> fan-lokalizacija, kratko
 	li "TALAS GROMA"   ; THUNDER WAVE -> prirodan prevod
@@ -109,24 +109,24 @@ MoveNames::
 	li "OČVRSNI"       ; HARDEN -> imperativ zvuči prirodno
 	li "UMANJI SE"     ; MINIMIZE -> prirodno i staje
 	li "DIMNA ZAVESA"  ; SMOKESCREEN -> prirodan prevod
-	li "ZBUN ZRAK"     ; CONFUSE RAY -> sažeto
+	li "ZBUN. ZRAK"     ; CONFUSE RAY -> sažeto
 	li "UVUCI SE"      ; WITHDRAW -> prirodno za kornjače/školjke
 	li "ODBR. KLUPKO"  ; DEFENSE CURL -> skraćeno, period zbog limita
 	li "BARIJERA"      ; BARRIER -> direktan prevod
 	li "SVET. ZID"     ; LIGHT SCREEN -> skraćeno, period zbog limita
 	li "IZMAGLICA"     ; HAZE -> prirodno, deli prevod sa Mist
 	li "ODRAZ"         ; REFLECT -> kraće i prirodno
-	li "FOKUS ENER."   ; FOCUS ENERGY -> skraćeno, period zbog limita
+	li "FOKUS"         ; FOCUS ENERGY -> skraćeno
 	li "TRPI"          ; BIDE -> funkcionalan prevod
 	li "METRONOM"      ; METRONOME -> direktan prevod
-	li "OGLED POTEZ"   ; MIRROR MOVE -> prirodan prevod
+	li "OGLEDALO"      ; MIRROR MOVE -> skraćeno
 	li "SAMOUNIŠT."    ; SELFDESTRUCT -> skraćeno, period zbog limita
-	li "JAJE BOMBA"    ; EGG BOMB -> prirodan prevod
+	li "BOMBA JAJA"    ; EGG BOMB -> prirodan prevod
 	li "LIZ"           ; LICK -> najkraće i prirodno
 	li "SMOG"          ; SMOG -> ostavljeno, prirodno i kratko
 	li "TALOG"         ; SLUDGE -> prirodno i kratko
-	li "KOST BATINA"   ; BONE CLUB -> prirodna fan-lokalizacija
-	li "VATR. EKSPL."  ; FIRE BLAST -> skraćeno, period zbog limita
+	li "BUTNA KOST"    ; BONE CLUB -> prirodna fan-lokalizacija
+	li "VATR. EKSP."   ; FIRE BLAST -> skraćeno, period zbog limita
 	li "VODOPAD"       ; WATERFALL -> direktan prevod
 	li "KLEŠTA"        ; CLAMP -> prirodno, efekat važniji
 	li "HITRO"         ; SWIFT -> kratko i prirodno
@@ -143,7 +143,7 @@ MoveNames::
 	li "PLOTAUN"       ; BARRAGE -> fan-lokalizacija, kratko
 	li "SISAJ ŽIVOT"   ; LEECH LIFE -> prirodan prevod
 	li "POLJUBAC"      ; LOVELY KISS -> sažeto, period zbog limita
-	li "NEBESKI UDAR"  ; SKY ATTACK -> prirodan prevod
+	li "UDAR NEBA"     ; SKY ATTACK -> prirodan prevod
 	li "PRETVARANJE"   ; TRANSFORM -> prirodan prevod
 	li "MEHUR"         ; BUBBLE -> direktan prevod
 	li "VRTOGL. UDAR"  ; DIZZY PUNCH -> skraćeno, period zbog limita
@@ -161,9 +161,9 @@ MoveNames::
 	li "HIPER OČNJ."   ; HYPER FANG -> skraćeno, period zbog limita
 	li "OŠTRENJE"      ; SHARPEN -> prirodan prevod
 	li "PRETVORBA"     ; CONVERSION -> prirodan prevod
-	li "TRI NAPADA"    ; TRI ATTACK -> prirodan prevod
+	li "TRI-NAPAD"     ; TRI ATTACK -> prirodan prevod
 	li "SUPER OČNJ."   ; SUPER FANG -> skraćeno, period zbog limita
 	li "REZ"           ; SLASH -> kratko i prirodno
-	li "ZAMENA"        ; SUBSTITUTE -> gameplay-smisao pre doslovnosti
+	li "x"        ; SUBSTITUTE -> gameplay-smisao pre doslovnosti
 	li "MUČENJE"       ; STRUGGLE -> prirodan battle termin
 	assert_list_length NUM_ATTACKS

@@ -85,10 +85,10 @@ VendingMachineText1:
 	text_end
 
 DrinkText:
-	db   "FRESH WATER"
-	next "SODA POP"
-	next "LEMONADE"
-	next "CANCEL@"
+	db   "SVEŽA VIDA"
+	next "SODA"
+	next "LIMUNADA"
+	next "OTKAŽI@"
 
 DrinkPriceText:
 	db   "¥200"

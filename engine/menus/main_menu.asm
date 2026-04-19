@@ -436,7 +436,7 @@ PrintPlayTime:
 
 SaveScreenInfoText:
 	db   "IGRAČ"
-	next "ZNAČKE    "
+	next "BEÐ     "
 	next "#DEX    "
 	next "VREME@"
 

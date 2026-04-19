@@ -1,4 +1,4 @@
-_ItemUseBallText00::
+_ItemUseBallText00:: ; todo: translate
 	text "It dodged the"
 	line "thrown BALL!"
 

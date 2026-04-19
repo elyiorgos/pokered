@@ -1,4 +1,4 @@
-_FileDataDestroyedText::
+_FileDataDestroyedText:: ; todo: translate
 	text "The file data is"
 	line "destroyed!"
 	prompt
