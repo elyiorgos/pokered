@@ -5,7 +5,7 @@ _PalletTownOakHeyWaitDontGoOutText::
 
 _PalletTownOakItsUnsafeText::
 	text "HRAST: Opasno je!" ; "OAK: It's unsafe!"
-	line "Divlji #MON" ; "Wild #MON live"
+	line "Divlji #MON su" ; "Wild #MON live"
 	cont "u visokoj travi!" ; "in tall grass!"
 
 	para "Treba ti" ; "You need your own"
