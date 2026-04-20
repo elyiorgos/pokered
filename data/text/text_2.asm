@@ -875,7 +875,7 @@ _MoneyForWinningText::
 	prompt
 
 _TrainerDefeatedText::
-	text "<PLAYER> pobedio" ; "<PLAYER> defeated"
+	text "<PLAYER> je pobedio" ; "<PLAYER> defeated"
 	line "@" ; "@"
 	text_ram wTrainerName
 	text "!" ; "!"
@@ -1448,25 +1448,25 @@ _TurnedOnPC1Text::
 	prompt
 
 _AccessedBillsPCText::
-	text "Pristup BIL-ovom" ; "Accessed BILL's"
-	line "PC." ; "PC."
+	text "Otvoren" ; "Accessed BILL's"
+	line "BIL-ov PC." ; "PC."
 
-	para "Pristupio sistem" ; "Accessed #MON"
-	line "čuvanje #MON." ; "Storage System."
+	para "Otvoren sistem" ; "Accessed #MON"
+	line "čuvanja #MON." ; "Storage System."
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Pristupio nečijem" ; "Accessed someone's"
-	line "PC." ; "PC."
+	text "Otvoren" ; "Accessed someone's"
+	line "nečiji PC." ; "PC."
 
-	para "Pristupio sistem" ; "Accessed #MON"
+	para "Otvoren sistem" ; "Accessed #MON"
 	line "čuvanja #MON." ; "Storage System."
 	prompt
 
 _AccessedMyPCText::
-	text "Pristupio mom PC." ; "Accessed my PC."
+	text "Otvoren moj PC." ; "Accessed my PC."
 
-	para "Pristupio sistem" ; "Accessed Item"
+	para "Otvoren sistem" ; "Accessed Item"
 	line "čuvanja stvari." ; "Storage System."
 	prompt
 
@@ -1541,11 +1541,11 @@ _TossHowManyText::
 	done
 
 _AccessedHoFPCText::
-	text "Pristupio sajtu" ; "Accessed #MON"
-	line "#MON LIGE." ; "LEAGUE's site."
+	text "Sajt #MON" ; "Accessed #MON"
+	line "LIGE." ; "LEAGUE's site."
 
-	para "Pristupio listu" ; "Accessed the HALL"
-	line "KUĆE SLAVNIH." ; "OF FAME List."
+	para "Lista KUĆU" ; "Accessed the HALL"
+	line "SLAVNIH." ; "OF FAME List."
 	prompt
 
 _SwitchOnText::

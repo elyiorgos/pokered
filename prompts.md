@@ -50,3 +50,77 @@ Translate the following asm file content into Serbian, respecting the format. Ch
 - Each translated line should have the original text next to it as a comment starting with ;
 
 ### text 3
+
+
+### Pallet town
+Translate the following asm file content into Serbian, respecting the format. Change only strings. Key things to keep in mind:
+- Each line of text can have a maximum of 19 characters (including quotation marks)
+- Keep spacing consistent with the original
+- OAK should be changed to HRAST
+- PALLET TOWN should be changed to PALET GRAD
+- #MON should not be changed in any situation
+- #MON should always be counted as 7 characters instead of 4
+- #DEX should not be changed in any situation
+- #DEX should always be counted as 7 characters instead of 4
+- <COLON> should never be changed
+- <RIVAL> should never be changed
+- <_CONT> should never be changed
+- <TARGET> should never be changed and should always be counted as 10 characters
+- <USER> should never be changed and should always be counted as 10 characters
+- @ should never be changed
+- <PLAYER> should never be changed and should be counted as 7 characters 
+- Each translated line should have the original text next to it as a comment starting with ;
+
+### Oaks Lab
+Translate the following asm file content into Serbian, respecting the format. Change only strings. Key things to keep in mind:
+- Each line of text can have a maximum of 19 characters (including quotation marks)
+- Keep spacing consistent with the original
+- OAK should be changed to HRAST
+- #MON should not be changed in any situation
+- #MON should always be counted as 7 characters instead of 4
+- #DEX should not be changed in any situation
+- #DEX should always be counted as 7 characters instead of 4
+- <COLON> should never be changed
+- <RIVAL> should never be changed
+- <_CONT> should never be changed
+- <TARGET> should never be changed and should always be counted as 10 characters
+- <USER> should never be changed and should always be counted as 10 characters
+- @ should never be changed
+- <PLAYER> should never be changed and should be counted as 7 characters 
+- Each translated line should have the original text next to it as a comment starting with ;
+
+### Route 1
+Translate the following asm file content into Serbian, respecting the format. Change only strings. Key things to keep in mind:
+- Each line of text can have a maximum of 19 characters (including quotation marks)
+- Keep spacing consistent with the original
+- OAK should be changed to HRAST
+- #MON should not be changed in any situation
+- #MON should always be counted as 7 characters instead of 4
+- #DEX should not be changed in any situation
+- #DEX should always be counted as 7 characters instead of 4
+- <COLON> should never be changed
+- <RIVAL> should never be changed
+- <_CONT> should never be changed
+- <TARGET> should never be changed and should always be counted as 10 characters
+- <USER> should never be changed and should always be counted as 10 characters
+- @ should never be changed
+- <PLAYER> should never be changed and should be counted as 7 characters 
+- Each translated line should have the original text next to it as a comment starting with ;
+
+### Reds house
+Translate the following asm file content into Serbian, respecting the format. Change only strings. Key things to keep in mind:
+- Each line of text can have a maximum of 19 characters (including quotation marks)
+- Keep spacing consistent with the original
+- OAK should be changed to HRAST
+- #MON should not be changed in any situation
+- #MON should always be counted as 7 characters instead of 4
+- #DEX should not be changed in any situation
+- #DEX should always be counted as 7 characters instead of 4
+- <COLON> should never be changed
+- <RIVAL> should never be changed
+- <_CONT> should never be changed
+- <TARGET> should never be changed and should always be counted as 10 characters
+- <USER> should never be changed and should always be counted as 10 characters
+- @ should never be changed
+- <PLAYER> should never be changed and should be counted as 7 characters 
+- Each translated line should have the original text next to it as a comment starting with ;

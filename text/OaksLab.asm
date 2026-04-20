@@ -206,7 +206,7 @@ _OaksLabOakChooseMonText::
 	para "Haha!" ; "Haha!"
 
 	para "Oni su u" ; "They are inside"
-	line "# LOPTIMA." ; "the # BALLs."
+	line "# LOPTAMA." ; "the # BALLs."
 
 	para "Kad sam bio mlad" ; "When I was young,"
 	line "bio sam pravi" ; "I was a serious"
@@ -214,7 +214,7 @@ _OaksLabOakChooseMonText::
 
 	para "Sad kad sam star," ; "In my old age, I"
 	line "imam samo 3," ; "have only 3 left,"
-	cont "ali ti možeš" ; "but you can have"
+	cont "ali daću ti" ; "but you can have"
 	cont "jednog! Biraj!" ; "one! Choose!"
 	done
 
